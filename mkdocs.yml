@@ -1,0 +1,59 @@
+site_name: Bonsai-27B 教学复现
+site_description: 用 PyTorch 复现 Bonsai-27B 的核心算子与设计哲学
+repo_url: https://github.com/example/bonsai-27b
+repo_name: bonsai-27b
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - content.code.copy
+    - content.math
+  palette:
+    - scheme: default
+      primary: green
+      toggle:
+        icon: material/brightness-7
+        name: dark
+    - scheme: slate
+      primary: green
+      toggle:
+        icon: material/brightness-4
+        name: light
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 设计哲学:
+    - Intelligence Density: philosophy/intelligence-density.md
+    - 为什么 1.7 bit 不崩: philosophy/why-not-collapse.md
+    - 算法创新谱系: philosophy/innovation-lineage.md
+  - 核心算子:
+    - Hadamard 旋转: operators/hadamard.md
+    - 三值化与二值化: operators/ternary.md
+    - XNOR-popcount kernel: operators/xnor-popcount.md
+    - PTQ1_0/PQ2_0 packing: operators/packing.md
+    - DSpark drafter: operators/dspark.md
+  - 模型架构:
+    - Transformer 架构: architecture/transformer.md
+  - 实验解读:
+    - 实验指南: experiments/guide.md
+  - API 参考:
+    - API: api/reference.md
