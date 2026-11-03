@@ -2,6 +2,8 @@
 
 用 PyTorch 复现 prism-ml/Bonsai-27B 的**核心算子**，重点讲清"为什么它敢做到 1.7 bit 还不崩"。
 
+📖 **[完整文档站](https://wanglh39.github.io/bonsai-27b/)** —— 哲学、算子推导、架构、实验解读、API 参考
+
 ## 它在讲什么
 
 Bonsai-27B 把 27B 大模型压到 3.9 GB（1-bit）或 5.9 GB（ternary），还能保留 90–98% 的 FP16 能力。
@@ -79,6 +81,7 @@ Bonsai 的全部设计都在最大化这个密度。详见 `experiments/03`。
 
 ## 进一步阅读
 
+- **[完整文档站](https://wanglh39.github.io/bonsai-27b/)** —— 哲学、算子推导、架构、实验解读、API 参考
 - 白皮书：`github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-27b-whitepaper.pdf`
 - 模型卡片：`huggingface.co/prism-ml/Bonsai-27B-gguf`
 - 理论源头：QuIP#（Hadamard-domain quantization）、BitNet 1.58b（ternary weight networks）
