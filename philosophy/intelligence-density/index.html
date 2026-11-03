@@ -536,33 +536,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#accuracy" class="md-nav__link">
+  <a href="#1-accuracy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么不用 accuracy 作为度量
+        1. 问题的起点：为什么 accuracy 是误导性的
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intelligence-density" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Intelligence Density 的定义
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Intelligence Density 的定义">
+    <nav class="md-nav" aria-label="1. 问题的起点：为什么 accuracy 是误导性的">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-log_21-textscore100-score" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么用 \(-\log_2(1 - \text{score}/100)\) 而不是 score
+        1.1 一个思想实验
       
     </span>
   </a>
@@ -570,10 +559,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#size_gb" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么除以 size_GB
+        1.2 传统量化的困境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-bonsai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Bonsai 的反直觉主张
       
     </span>
   </a>
@@ -586,13 +586,252 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#2-intelligence-density" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实测对比
+        2. Intelligence Density 的定义
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Intelligence Density 的定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-log_21-s100-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 为什么用 \(-\log_2(1 - s/100)\) 而不是 score
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 为什么用 \(-\log_2(1 - s/100)\) 而不是 score">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直觉：分数的"价值"不是线性的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-log_21-s100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数学：\(-\log_2(1 - s/100)\) 的性质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log_2-log_10-ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么是 \(\log_2\) 而不是 \(\log_{10}\) 或 \(\ln\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-size_gb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 为什么除以 size_GB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 "装不下 = 0 分"的硬约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bonsai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 实测对比：Bonsai 在密度上的优势
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 实测对比：Bonsai 在密度上的优势">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 数据表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 反直觉的结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-2-bit-vs-bonsai-ternary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 传统 2-bit vs Bonsai ternary 的对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 这个度量本身也是贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 这个度量本身也是贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 重新定义优化目标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 对社区的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 和"能力密度"的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 实验验证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 哲学总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 哲学总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 这不是"精度 vs 体积"的权衡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-bonsai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 这解释了 Bonsai 的所有设计选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -600,18 +839,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        这个度量本身也是贡献
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        实验验证
+        进一步阅读
       
     </span>
   </a>
@@ -1177,33 +1405,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#accuracy" class="md-nav__link">
+  <a href="#1-accuracy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么不用 accuracy 作为度量
+        1. 问题的起点：为什么 accuracy 是误导性的
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intelligence-density" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Intelligence Density 的定义
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Intelligence Density 的定义">
+    <nav class="md-nav" aria-label="1. 问题的起点：为什么 accuracy 是误导性的">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-log_21-textscore100-score" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么用 \(-\log_2(1 - \text{score}/100)\) 而不是 score
+        1.1 一个思想实验
       
     </span>
   </a>
@@ -1211,10 +1428,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#size_gb" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        为什么除以 size_GB
+        1.2 传统量化的困境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-bonsai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Bonsai 的反直觉主张
       
     </span>
   </a>
@@ -1227,13 +1455,252 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#2-intelligence-density" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实测对比
+        2. Intelligence Density 的定义
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="2. Intelligence Density 的定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-log_21-s100-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 为什么用 \(-\log_2(1 - s/100)\) 而不是 score
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 为什么用 \(-\log_2(1 - s/100)\) 而不是 score">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        直觉：分数的"价值"不是线性的
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-log_21-s100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数学：\(-\log_2(1 - s/100)\) 的性质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log_2-log_10-ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么是 \(\log_2\) 而不是 \(\log_{10}\) 或 \(\ln\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-size_gb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 为什么除以 size_GB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 "装不下 = 0 分"的硬约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-bonsai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 实测对比：Bonsai 在密度上的优势
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 实测对比：Bonsai 在密度上的优势">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 数据表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 反直觉的结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-2-bit-vs-bonsai-ternary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 传统 2-bit vs Bonsai ternary 的对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 这个度量本身也是贡献
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 这个度量本身也是贡献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 重新定义优化目标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 对社区的影响
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 和"能力密度"的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 实验验证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 哲学总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 哲学总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 这不是"精度 vs 体积"的权衡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-bonsai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 这解释了 Bonsai 的所有设计选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1241,18 +1708,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        这个度量本身也是贡献
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        实验验证
+        进一步阅读
       
     </span>
   </a>
@@ -1281,11 +1737,14 @@
 
 <h1 id="intelligence-density-ai">Intelligence Density：端侧 AI 的真目标<a class="headerlink" href="#intelligence-density-ai" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>核心论点</strong>：端侧 AI 的目标不是"最大化精度"，而是"<strong>在装得下的前提下最大化可用智力</strong>"。
-绝对分数是误导性的度量——装不下的模型，分数再高也是 0。</p>
+<p><strong>主线</strong>：传统 AI 优化追求"最高精度"，但在端侧场景这个目标是<strong>误导性的</strong>——
+装不下的模型，分数再高也是 0。Bonsai 提出 <strong>Intelligence Density</strong>（每 GB 的可用智力）作为正确的优化目标，
+这不只是一个度量，而是<strong>重新定义了端侧 AI 的设计哲学</strong>。</p>
 </blockquote>
-<h2 id="accuracy">为什么不用 accuracy 作为度量<a class="headerlink" href="#accuracy" title="Permanent link">&para;</a></h2>
-<p>考虑两个模型：</p>
+<hr />
+<h2 id="1-accuracy">1. 问题的起点：为什么 accuracy 是误导性的<a class="headerlink" href="#1-accuracy" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 一个思想实验<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>假设你是一个端侧工程师，要在 iPhone 15 Pro（8 GB 统一内存）上部署一个 27B 参数的模型。你有两个选择：</p>
 <table>
 <thead>
 <tr>
@@ -1301,92 +1760,199 @@
 <td>54 GB</td>
 </tr>
 <tr>
-<td>4-bit 量化</td>
-<td>82</td>
-<td>14 GB</td>
-</tr>
-<tr>
 <td>Bonsai ternary</td>
 <td>83</td>
 <td>5.9 GB</td>
 </tr>
+</tbody>
+</table>
+<p>如果只看 accuracy，FP16 赢了（85 &gt; 83）。但 FP16 需要 54 GB 显存——
+<strong>iPhone 15 Pro 只有 8 GB</strong>。你根本装不下。</p>
+<p>那 FP16 的实际价值是多少？<strong>0 分</strong>。不是"性能差一点"，是"完全不可用"。</p>
+<p>这不是夸张的修辞。这是<strong>硬约束</strong>：</p>
+<ul>
+<li>iPhone 15 Pro：8 GB 统一内存</li>
+<li>M5 Max MacBook：最多 64 GB（但要分给系统、其他 app）</li>
+<li>L40S 显卡：48 GB（单卡装不下 FP16 27B）</li>
+<li>端侧推理芯片：通常 4-16 GB</li>
+</ul>
+<p>在硬约束下，"装不下"和"装得下但差一点"之间有<strong>质的差异</strong>，不是量的差异。</p>
+<h3 id="12">1.2 传统量化的困境<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p>传统量化（8-bit、4-bit）试图在这个约束下工作，但遇到一个根本困难：</p>
+<p><strong>sub-4-bit 会塌陷</strong>。</p>
+<table>
+<thead>
 <tr>
-<td>Bonsai 1-bit</td>
-<td>76</td>
+<th>量化精度</th>
+<th>math 分数</th>
+<th>大小</th>
+<th>现象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FP16</td>
+<td>85</td>
+<td>54 GB</td>
+<td>装不下</td>
+</tr>
+<tr>
+<td>8-bit</td>
+<td>84</td>
+<td>27 GB</td>
+<td>还是装不下（端侧）</td>
+</tr>
+<tr>
+<td>4-bit</td>
+<td>82</td>
+<td>14 GB</td>
+<td>勉强装得下，但牺牲了精度</td>
+</tr>
+<tr>
+<td>2-bit</td>
+<td>57</td>
+<td>7 GB</td>
+<td>装得下，但<strong>塌陷</strong>——reasoning chain 断裂</td>
+</tr>
+<tr>
+<td>1-bit</td>
+<td>50</td>
 <td>3.9 GB</td>
+<td>装得下，但<strong>完全不可用</strong></td>
 </tr>
 </tbody>
 </table>
-<p>如果只看 accuracy，FP16 最高。但端侧设备（手机、边缘服务器）的硬约束是<strong>装得下</strong>：
-54 GB 的模型根本装不进手机——它的实际价值是 <strong>0 分</strong>。</p>
-<p>这不是夸张。一个 27B FP16 模型需要 ~54 GB 显存，而：</p>
+<p>"塌陷"是什么意思？不是"分数线性下降"，而是<strong>悬崖式跌落</strong>：</p>
 <ul>
-<li>iPhone 15 Pro：8 GB 统一内存</li>
-<li>M5 Max MacBook：最多 64 GB（但要分给系统）</li>
-<li>L40S 显卡：48 GB（单卡装不下 FP16 27B）</li>
+<li>4-bit → 2-bit：分数从 82 暴跌到 57</li>
+<li>57 分意味着模型能做简单问答，但<strong>多步推理会断裂</strong>——
+  第一步对、第二步对、第三步突然胡说八道，因为中间的 attention 矩阵已经失真到无法聚合信息</li>
 </ul>
-<p><strong>装不下 = 0 分</strong>。这是硬约束，不是"性能差一点"。</p>
-<h2 id="intelligence-density">Intelligence Density 的定义<a class="headerlink" href="#intelligence-density" title="Permanent link">&para;</a></h2>
+<p>这就是"传统量化在 sub-4-bit 会塌陷"的含义。它不是"精度不够好"，是"能力质变"。</p>
+<h3 id="13-bonsai">1.3 Bonsai 的反直觉主张<a class="headerlink" href="#13-bonsai" title="Permanent link">&para;</a></h3>
+<p>Bonsai-27B 把 27B 模型压到 <strong>1.7 bit</strong>（ternary，5.9 GB）或 <strong>1.125 bit</strong>（1-bit，3.9 GB），
+还能保留 <strong>98.2%</strong>（ternary）或 <strong>89.5%</strong>（1-bit）的 FP16 能力。</p>
+<p>这在传统量化理论里是"不可能的"——sub-2-bit 应该彻底塌陷。Bonsai 不仅没塌，还保留了几乎全部能力。</p>
+<p><strong>怎么做到的？</strong> 这正是本教学项目要讲清的核心问题。但在此之前，我们需要先回答一个更根本的问题：</p>
+<p><strong>"保留 98% 能力"是对的吗？我们应该用什么度量来评价一个压缩方法？</strong></p>
+<p>这就是 Intelligence Density 的出发点。</p>
+<hr />
+<h2 id="2-intelligence-density">2. Intelligence Density 的定义<a class="headerlink" href="#2-intelligence-density" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 公式<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[D = \frac{-\log_2(1 - \text{score}/100)}{\text{size\_GB}}\]</div>
-<h3 id="-log_21-textscore100-score">为什么用 <span class="arithmatex">\(-\log_2(1 - \text{score}/100)\)</span> 而不是 score<a class="headerlink" href="#-log_21-textscore100-score" title="Permanent link">&para;</a></h3>
-<p>这是整个度量的关键设计。直觉是：<strong>"85→90 分"和"57→62 分"不是等价的</strong>。</p>
+<p>这个度量有两部分：<strong>可用智力</strong> <span class="arithmatex">\(-\log_2(1 - \text{score}/100)\)</span> 和 <strong>体积</strong> <span class="arithmatex">\(\text{size\_GB}\)</span>。
+下面分别讲清楚为什么这么设计。</p>
+<h3 id="22-log_21-s100-score">2.2 为什么用 <span class="arithmatex">\(-\log_2(1 - s/100)\)</span> 而不是 score<a class="headerlink" href="#22-log_21-s100-score" title="Permanent link">&para;</a></h3>
+<p>这是整个度量的<strong>关键设计</strong>，不是随意的数学变换。</p>
+<h4 id="_1">直觉：分数的"价值"不是线性的<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<p>考虑两组进步：</p>
 <ul>
-<li>85 分的模型"基本可用"，90 分"很好用"——差距 5 分但价值大</li>
-<li>57 分的模型"不可用"（reasoning chain 会断），62 分"还是不可用"——差距 5 分但价值为 0</li>
+<li><strong>57 → 62 分</strong>：模型从"reasoning chain 会断"到"还是会断"——两者都不可用，价值差为 0</li>
+<li><strong>85 → 90 分</strong>：模型从"基本可用"到"很好用"——差距 5 分但价值巨大</li>
 </ul>
-<p><span class="arithmatex">\(-\log_2(1 - s/100)\)</span> 把"接近满分"的进步放大，把"低分区的进步"压平：</p>
+<p><strong>同样差 5 分，价值天差地别。</strong> 这说明 score 作为度量是误导性的——它假设"每 1 分的价值相等"，但实际上：</p>
+<ul>
+<li>低分区的进步价值≈0（还是不可用）</li>
+<li>高分区的进步价值很大（从"可用"到"好用"）</li>
+</ul>
+<h4 id="-log_21-s100">数学：<span class="arithmatex">\(-\log_2(1 - s/100)\)</span> 的性质<a class="headerlink" href="#-log_21-s100" title="Permanent link">&para;</a></h4>
+<p>这个函数的关键性质：</p>
+<ol>
+<li><strong><span class="arithmatex">\(s \to 100\)</span> 时趋向无穷</strong>：接近满分时，每 1 分的价值越来越大</li>
+<li><strong><span class="arithmatex">\(s = 50\)</span> 时值为 1</strong>：50 分的模型价值为 1 个单位</li>
+<li><strong><span class="arithmatex">\(s &lt; 50\)</span> 时值 <span class="arithmatex">\(&lt; 1\)</span></strong>：低分模型价值被压平</li>
+</ol>
+<p>具体数值：</p>
 <table>
 <thead>
 <tr>
 <th>score</th>
 <th><span class="arithmatex">\(-\log_2(1 - s/100)\)</span></th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>30</td>
+<td>0.49</td>
+<td>几乎不可用</td>
+</tr>
+<tr>
 <td>50</td>
 <td>1.00</td>
+<td>勉强可用</td>
 </tr>
 <tr>
 <td>57</td>
 <td>1.22</td>
+<td>临界——reasoning chain 刚好不断</td>
 </tr>
 <tr>
 <td>62</td>
 <td>1.40</td>
+<td>基本可用但不好</td>
 </tr>
 <tr>
 <td>76</td>
 <td>2.00</td>
+<td>不错</td>
 </tr>
 <tr>
 <td>83</td>
 <td>2.58</td>
+<td>很好</td>
 </tr>
 <tr>
 <td>85</td>
 <td>2.73</td>
+<td>接近原版</td>
 </tr>
 <tr>
 <td>90</td>
 <td>3.32</td>
+<td>非常好</td>
+</tr>
+<tr>
+<td>95</td>
+<td>4.32</td>
+<td>极好</td>
+</tr>
+<tr>
+<td>99</td>
+<td>6.64</td>
+<td>几乎无损</td>
 </tr>
 </tbody>
 </table>
-<p>57→62 分的进步只值 0.18，而 85→90 分的进步值 0.59——后者价值是前者的 3 倍多。</p>
-<h3 id="size_gb">为什么除以 size_GB<a class="headerlink" href="#size_gb" title="Permanent link">&para;</a></h3>
-<p>因为端侧的硬约束是体积。同样 85 分：</p>
+<p><strong>57→62 分的进步只值 0.18，而 85→90 分的进步值 0.59——后者价值是前者的 3 倍多。</strong></p>
+<h4 id="log_2-log_10-ln">为什么是 <span class="arithmatex">\(\log_2\)</span> 而不是 <span class="arithmatex">\(\log_{10}\)</span> 或 <span class="arithmatex">\(\ln\)</span><a class="headerlink" href="#log_2-log_10-ln" title="Permanent link">&para;</a></h4>
+<p><span class="arithmatex">\(\log_2\)</span> 的好处是<strong>和 bit 量纲对齐</strong>。1 bit 的信息量就是 <span class="arithmatex">\(\log_2 2 = 1\)</span>。
+用 <span class="arithmatex">\(\log_2\)</span> 让"可用智力"和"存储 bit"在同一量纲下，密度的物理意义清晰：
+"每 bit 存储能承载多少 bit 的可用智力"。</p>
+<h3 id="23-size_gb">2.3 为什么除以 size_GB<a class="headerlink" href="#23-size_gb" title="Permanent link">&para;</a></h3>
+<p>因为端侧的硬约束是<strong>体积</strong>。同样 85 分的模型：</p>
 <ul>
-<li>54 GB：<span class="arithmatex">\(D = 2.73 / 54 = 0.051\)</span></li>
+<li>54 GB：<span class="arithmatex">\(D = 2.73 / 54 = 0.051\)</span> — 密度极低</li>
 <li>5.9 GB：<span class="arithmatex">\(D = 2.73 / 5.9 = 0.463\)</span> — <strong>9 倍密度</strong></li>
 </ul>
-<h2 id="_1">实测对比<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>在"装得下"的约束下，密度高的才是赢家。</p>
+<h3 id="24-0">2.4 "装不下 = 0 分"的硬约束<a class="headerlink" href="#24-0" title="Permanent link">&para;</a></h3>
+<p>这是 Intelligence Density 的<strong>隐含前提</strong>。公式本身不包含这个约束——
+它假设模型已经装得下，然后在装得下的模型里比密度。</p>
+<p>但实际使用时，先过"装得下"这一关：</p>
+<div class="arithmatex">\[D_{\text{实际}} = \begin{cases} D &amp; \text{if size} \leq \text{budget} \\ 0 &amp; \text{if size} &gt; \text{budget} \end{cases}\]</div>
+<p>这个硬约束是<strong>质的</strong>，不是"性能差一点"。FP16 的 85 分在 54 GB 里是浪费——
+装不下 = 0 分，不管 accuracy 多高。</p>
+<hr />
+<h2 id="3-bonsai">3. 实测对比：Bonsai 在密度上的优势<a class="headerlink" href="#3-bonsai" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 数据表<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>模型</th>
 <th>score</th>
 <th>size</th>
+<th>可用智力</th>
 <th><span class="arithmatex">\(D\)</span></th>
 </tr>
 </thead>
@@ -1395,35 +1961,93 @@
 <td>FP16 27B</td>
 <td>85</td>
 <td>54 GB</td>
+<td>2.73</td>
 <td>0.051</td>
+</tr>
+<tr>
+<td>8-bit 27B</td>
+<td>84</td>
+<td>27 GB</td>
+<td>2.64</td>
+<td>0.098</td>
 </tr>
 <tr>
 <td>4-bit 27B</td>
 <td>82</td>
 <td>14 GB</td>
-<td>0.166</td>
+<td>2.48</td>
+<td>0.177</td>
+</tr>
+<tr>
+<td>2-bit 27B（传统）</td>
+<td>57</td>
+<td>7 GB</td>
+<td>1.22</td>
+<td>0.174</td>
 </tr>
 <tr>
 <td><strong>Bonsai ternary</strong></td>
 <td><strong>83</strong></td>
 <td><strong>5.9 GB</strong></td>
+<td><strong>2.58</strong></td>
 <td><strong>0.437</strong></td>
 </tr>
 <tr>
 <td><strong>Bonsai 1-bit</strong></td>
 <td><strong>76</strong></td>
 <td><strong>3.9 GB</strong></td>
+<td><strong>2.00</strong></td>
 <td><strong>0.513</strong></td>
 </tr>
 </tbody>
 </table>
+<h3 id="32">3.2 反直觉的结论<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <div class="admonition insight">
-<p class="admonition-title">反直觉的结论</p>
-<p>1-bit Bonsai 的绝对分数最低（76），但 <strong>Intelligence Density 最高</strong>。
-在"装得下"的约束下，它是端侧最优选择。</p>
+<p class="admonition-title">1-bit Bonsai 的绝对分数最低，但密度最高</p>
+<p>1-bit Bonsai 的 math 分数只有 76（最低），但 Intelligence Density 是 <strong>0.513</strong>（最高）。</p>
+<p>在"装得下"的约束下（比如 4 GB 预算），<strong>它是端侧最优选择</strong>。
+4-bit 量化虽然分数更高（82），但需要 14 GB——在 4 GB 预算下装不下 = 0 分。</p>
 <p>这就是 Bonsai 的设计哲学：<strong>不是"压到最小"，而是"在装得下的前提下最大化可用智力"</strong>。</p>
 </div>
-<h2 id="_2">这个度量本身也是贡献<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="33-2-bit-vs-bonsai-ternary">3.3 传统 2-bit vs Bonsai ternary 的对比<a class="headerlink" href="#33-2-bit-vs-bonsai-ternary" title="Permanent link">&para;</a></h3>
+<p>这是最能体现 Bonsai 价值的对比：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>传统 2-bit</th>
+<th>Bonsai ternary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>精度</td>
+<td>2 bit</td>
+<td>1.72 bit（更少！）</td>
+</tr>
+<tr>
+<td>大小</td>
+<td>7 GB</td>
+<td>5.9 GB（更小！）</td>
+</tr>
+<tr>
+<td>score</td>
+<td>57（塌陷）</td>
+<td>83（不塌）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(D\)</span></td>
+<td>0.174</td>
+<td>0.437（<strong>2.5x</strong>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bonsai 用更少的 bit，得到更高的分数。</strong> 这不是"量化做得更好"，而是"换了一套方法"——
+传统量化是"训练完再压"，Bonsai 是"旋转 + QAT + 系统配合"。</p>
+<p>详见 <a href="../why-not-collapse/">为什么 1.7 bit 不崩</a>。</p>
+<hr />
+<h2 id="4">4. 这个度量本身也是贡献<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 重新定义优化目标<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <p>Intelligence Density 不只是 Bonsai 的内部度量——它提出了一个<strong>重新定义端侧 AI 优化目标</strong>的框架：</p>
 <ol>
 <li><strong>传统视角</strong>：固定模型大小，最大化精度 → 量化是"妥协"</li>
@@ -1431,15 +2055,65 @@
 </ol>
 <p>视角 2 下，1-bit 不是"退而求其次"，而是"在 4 GB 预算下的最优解"。
 这把 sub-4-bit 量化从"工程妥协"提升到"一等设计目标"。</p>
-<h2 id="_3">实验验证<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>详见 <code>experiments/03_intelligence_density.py</code>，它计算了上述所有模型的密度并画出"装不下 = 0 分"的硬约束效果。</p>
+<h3 id="42">4.2 对社区的影响<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p>这个度量框架的影响超出 Bonsai 本身：</p>
+<ul>
+<li><strong>模型选型</strong>：端侧工程师应该按 <span class="arithmatex">\(D\)</span> 选模型，不是按 accuracy</li>
+<li><strong>压缩方法评价</strong>：压缩方法的好坏应该按"密度提升"评价，不是"精度保留"</li>
+<li><strong>硬件设计</strong>：芯片设计应该优化"每 GB 的推理吞吐"，不是"峰值 FLOPS"</li>
+</ul>
+<h3 id="43">4.3 和"能力密度"的区别<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p>有人可能说"这不就是'每 GB 的 accuracy'吗？为什么要用 <span class="arithmatex">\(-\log_2\)</span>？"</p>
+<p>区别在于<strong>对低分区的处理</strong>：</p>
+<ul>
+<li><span class="arithmatex">\(s / \text{size}\)</span>：57 分的模型有 57/7 = 8.14 的"密度"——但 57 分的模型<strong>不可用</strong>，给它非 0 密度是误导</li>
+<li><span class="arithmatex">\(-\log_2(1-s/100) / \text{size}\)</span>：57 分的模型密度只有 0.174——正确反映了"勉强可用"</li>
+</ul>
+<p><span class="arithmatex">\(-\log_2\)</span> 的非线性<strong>正确刻画了"可用性"的非线性</strong>：从"不可用"到"可用"是质的跳跃，不是量的渐变。</p>
 <hr />
+<h2 id="5">5. 实验验证<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p><code>experiments/03_intelligence_density.py</code> 做了以下验证：</p>
+<ol>
+<li>计算上述所有模型的 <span class="arithmatex">\(D\)</span> 值</li>
+<li>展示"装不下 = 0 分"的硬约束效果</li>
+<li>画出 density vs size 的 Pareto 前沿</li>
+</ol>
+<p><strong>关键输出</strong>：</p>
+<div class="highlight"><pre><span></span><code>FP16 27B:       score=85, size=54GB, D=0.051
+4-bit 27B:      score=82, size=14GB, D=0.177
+Bonsai ternary: score=83, size=5.9GB, D=0.437
+Bonsai 1-bit:   score=76, size=3.9GB, D=0.513
+</code></pre></div>
+<p>Bonsai 1-bit 的 <span class="arithmatex">\(D\)</span> 最高——<strong>在端侧场景，它是赢家</strong>。</p>
+<hr />
+<h2 id="6">6. 哲学总结<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <div class="admonition quote">
 <p class="admonition-title">设计哲学一句话</p>
-<p>端侧 AI 的真目标是"每 GB 的可用智力"，不是绝对精度。
+<p>端侧 AI 的真目标是"<strong>每 GB 的可用智力</strong>"，不是绝对精度。
 FP16 的 85 分在 54 GB 里是浪费——装不下 = 0 分。
 Bonsai 的全部设计都在最大化这个密度。</p>
 </div>
+<h3 id="61-vs">6.1 这不是"精度 vs 体积"的权衡<a class="headerlink" href="#61-vs" title="Permanent link">&para;</a></h3>
+<p>传统理解是"精度和体积不可兼得，量化是妥协"。Intelligence Density 说的是更深层的东西：</p>
+<p><strong>"精度"本身是误导性的度量</strong>。一个 85 分但 54 GB 的模型，在端侧场景的价值是 0。
+"精度"只衡量了"如果装得下，模型有多好"，但没衡量"能不能装得下"。</p>
+<p>Intelligence Density 把两个维度合并成一个度量，让优化目标变得明确：
+<strong>最大化 <span class="arithmatex">\(D\)</span></strong>，在 <span class="arithmatex">\(D\)</span> 的定义里已经包含了"装得下"的硬约束。</p>
+<h3 id="62-bonsai">6.2 这解释了 Bonsai 的所有设计选择<a class="headerlink" href="#62-bonsai" title="Permanent link">&para;</a></h3>
+<p>为什么 Bonsai 选择 1.7 bit 而不是 4 bit？因为 4 bit 的 27B 模型要 14 GB，
+在 4-8 GB 的端侧预算下装不下。1.7 bit 的 5.9 GB 才装得下。</p>
+<p>为什么 Bonsai 花大力气做 Hadamard 旋转？因为旋转让 1.7 bit 不塌陷——
+不塌陷意味着 score 从 57 跳到 83，可用智力从 1.22 跳到 2.58，密度翻倍。</p>
+<p>为什么 Bonsai 做 DSpark speculative decoding？因为推理速度也是密度的一部分——
+每 GB 的"可用智力"不只是"能跑"，还要"跑得快"。</p>
+<p><strong>所有技术选择都指向同一个目标：最大化 Intelligence Density。</strong></p>
+<hr />
+<h2 id="_2">进一步阅读<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../why-not-collapse/">为什么 1.7 bit 不崩</a> — 旋转让密度翻倍的技术支点</li>
+<li><a href="../innovation-lineage/">算法创新谱系</a> — Bonsai 站在哪些巨人的肩膀上</li>
+<li><code>experiments/03_intelligence_density.py</code> — 实验验证</li>
+</ul>
 
 
 

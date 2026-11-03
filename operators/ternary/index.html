@@ -707,143 +707,254 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ternary" class="md-nav__link">
+  <a href="#1-ternary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三值化 (Ternary)
+        1. 三值化 (Ternary)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="三值化 (Ternary)">
+    <nav class="md-nav" aria-label="1. 三值化 (Ternary)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-bitnet-158b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 赋值规则（BitNet 1.58b 路线）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-07-meanw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 为什么阈值是 0.7 * mean(|w|)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 二值化 (Binary)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 二值化 (Binary)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-1-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 1-bit 的硬件优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-group_size-128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. group_size = 128 的甜点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. group_size = 128 的甜点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 权衡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 为什么 128
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ptq-vs-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. PTQ vs QAT：核心差异
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. PTQ vs QAT：核心差异">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 两种方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-ptq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 PTQ 的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 QAT 的做法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-ste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 STE：让梯度流过不可导的三值化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 QAT 和旋转的乘法关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. QAT 的代价
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实验验证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        表示
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bitnet-158b" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        赋值规则（BitNet 1.58b 路线）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#07-meanw" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        为什么阈值是 0.7 * mean(|w|)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        代码
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#binary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二值化 (Binary)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二值化 (Binary)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        表示
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#1-bit" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1-bit 的硬件优势
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        代价
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#group_size-128" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        group_size = 128 的甜点
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ptq-vs-qat" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PTQ vs QAT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        API
+        进一步阅读
       
     </span>
   </a>
@@ -1238,143 +1349,254 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ternary" class="md-nav__link">
+  <a href="#1-ternary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三值化 (Ternary)
+        1. 三值化 (Ternary)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="三值化 (Ternary)">
+    <nav class="md-nav" aria-label="1. 三值化 (Ternary)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-bitnet-158b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 赋值规则（BitNet 1.58b 路线）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-07-meanw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 为什么阈值是 0.7 * mean(|w|)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-binary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 二值化 (Binary)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 二值化 (Binary)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-1-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 1-bit 的硬件优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-group_size-128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. group_size = 128 的甜点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. group_size = 128 的甜点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 权衡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 为什么 128
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ptq-vs-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. PTQ vs QAT：核心差异
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. PTQ vs QAT：核心差异">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 两种方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-ptq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 PTQ 的问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 QAT 的做法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-ste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 STE：让梯度流过不可导的三值化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 QAT 和旋转的乘法关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. QAT 的代价
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实验验证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        表示
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#bitnet-158b" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        赋值规则（BitNet 1.58b 路线）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#07-meanw" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        为什么阈值是 0.7 * mean(|w|)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        代码
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#binary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二值化 (Binary)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二值化 (Binary)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        表示
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#1-bit" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1-bit 的硬件优势
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        代价
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#group_size-128" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        group_size = 128 的甜点
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ptq-vs-qat" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        PTQ vs QAT
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        API
+        进一步阅读
       
     </span>
   </a>
@@ -1403,28 +1625,37 @@
 
 <h1 id="_1">三值化与二值化<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>核心</strong>：把权重从 FP16 压到 <span class="arithmatex">\(\{−1, 0, +1\}\)</span>（三值）或 <span class="arithmatex">\(\{−1, +1\}\)</span>（二值），
-每 128 个权重共享一个 FP16 scale。幅度信息交给 scale，方向信息交给 trit/sign。</p>
+<p><strong>主线</strong>：把权重从 FP16 压到 <span class="arithmatex">\(\{−1, 0, +1\}\)</span>（三值）或 <span class="arithmatex">\(\{−1, +1\}\)</span>（二值），
+幅度信息交给 group scale，方向信息交给 trit/sign。
+关键不是"压得多狠"，而是"<strong>怎么让权重学会在低 bit 上工作</strong>"——这就是 QAT。</p>
 </blockquote>
-<h2 id="ternary">三值化 (Ternary)<a class="headerlink" href="#ternary" title="Permanent link">&para;</a></h2>
-<h3 id="_2">表示<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="1-ternary">1. 三值化 (Ternary)<a class="headerlink" href="#1-ternary" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 表示<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <p>权重 <span class="arithmatex">\(\tilde{w} \in \{−1, 0, +1\}\)</span>，每 <span class="arithmatex">\(\text{group\_size}\)</span> 个权重共享一个 FP16 scale <span class="arithmatex">\(\alpha_g\)</span>。</p>
 <p>一个 trit 承载 <span class="arithmatex">\(\log_2 3 \approx 1.585\)</span> bit 信息，
 加 16-bit scale 摊到 128 个权重上 → 有效 ~1.71 bits/weight。</p>
-<h3 id="bitnet-158b">赋值规则（BitNet 1.58b 路线）<a class="headerlink" href="#bitnet-158b" title="Permanent link">&para;</a></h3>
+<h3 id="12-bitnet-158b">1.2 赋值规则（BitNet 1.58b 路线）<a class="headerlink" href="#12-bitnet-158b" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[\alpha_g = \text{mean}(|w_g|) \quad \text{（group scale，组的平均幅度）}$$
 $$\Delta_g = 0.7 \cdot \alpha_g \quad \text{（阈值，低于它判 0）}$$
 $$\tilde{w} = \text{clip}\left(\text{round}\left(\frac{w}{\Delta_g}\right), -1, 1\right)\]</div>
 <p>反量化：<span class="arithmatex">\(\hat{w} = \tilde{w} \cdot \Delta_g\)</span></p>
-<h3 id="07-meanw">为什么阈值是 0.7 * mean(|w|)<a class="headerlink" href="#07-meanw" title="Permanent link">&para;</a></h3>
-<p>经验上让 <strong>~一半权重为 0</strong>（稀疏），非零权重保留符号和量级主信息。</p>
-<p>0 的好处：</p>
+<h3 id="13-07-meanw">1.3 为什么阈值是 0.7 * mean(|w|)<a class="headerlink" href="#13-07-meanw" title="Permanent link">&para;</a></h3>
+<p>这个 0.7 不是随便选的。它让 <strong>~一半权重为 0</strong>（稀疏），非零权重保留符号和量级主信息。</p>
+<p>0 的三个好处：</p>
 <ol>
-<li><strong>稀疏 → matmul 可跳过</strong>：0 位置的乘法直接跳过</li>
+<li><strong>稀疏 → matmul 可跳过</strong>：0 位置的乘法直接跳过，省计算</li>
 <li><strong>信息保留</strong>：大权重保留符号（±1），小权重归零（本来就不重要）</li>
 <li><strong>与 XNOR 交互</strong>：0 需要 mask 处理，这是 PTQ1_0/PQ2_0 复杂度的来源</li>
 </ol>
-<h3 id="_3">代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>为什么是 0.7 而不是 0.5 或 0.8？</p>
+<ul>
+<li>0.5：太多权重为 0，信息丢失严重</li>
+<li>0.8：太少权重为 0，稀疏性不够</li>
+<li><strong>0.7</strong>：经验甜点，~50% 稀疏 + 信息保留好</li>
+</ul>
+<p>这是 BitNet 1.58b 论文的经验值，Bonsai 直接继承。</p>
+<h3 id="14">1.4 代码<a class="headerlink" href="#14" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai</span><span class="w"> </span><span class="kn">import</span> <span class="n">ternarize</span><span class="p">,</span> <span class="n">dequantize</span>
 
 <span class="n">trit</span><span class="p">,</span> <span class="n">scale</span> <span class="o">=</span> <span class="n">ternarize</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">group_size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
@@ -1433,21 +1664,27 @@ $$\tilde{w} = \text{clip}\left(\text{round}\left(\frac{w}{\Delta_g}\right), -1, 
 
 <span class="n">W_recovered</span> <span class="o">=</span> <span class="n">dequantize</span><span class="p">(</span><span class="n">trit</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">group_size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="binary">二值化 (Binary)<a class="headerlink" href="#binary" title="Permanent link">&para;</a></h2>
-<h3 id="_4">表示<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="2-binary">2. 二值化 (Binary)<a class="headerlink" href="#2-binary" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 表示<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <p>权重 <span class="arithmatex">\(\tilde{w} \in \{−1, +1\}\)</span>，<strong>无 0</strong>。更激进：幅度信息全交给 group scale。</p>
 <div class="arithmatex">\[\alpha_g = \text{mean}(|w_g|)$$
 $$\tilde{w} = \text{sign}(w)\]</div>
 <p>反量化：<span class="arithmatex">\(\hat{w} = \tilde{w} \cdot \alpha_g\)</span></p>
 <p>有效 <strong>1.125 bits/weight</strong>（1 sign bit + 16-bit scale / 128）。</p>
-<h3 id="1-bit">1-bit 的硬件优势<a class="headerlink" href="#1-bit" title="Permanent link">&para;</a></h3>
+<h3 id="22-1-bit">2.2 1-bit 的硬件优势<a class="headerlink" href="#22-1-bit" title="Permanent link">&para;</a></h3>
 <p>二值化权重的 matmul 可以用 <strong>XNOR + popcount</strong> 实现——纯位运算，不需要乘法器。</p>
+<p>理论 throughput：AVX2 XNOR 一次 256 bit，vs FP16 FMA 一次 1 个 → <strong>256x 算力比</strong>。</p>
 <p>详见 <a href="../xnor-popcount/">XNOR-popcount kernel</a>。</p>
-<h3 id="_5">代价<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="23">2.3 代价<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
 <p>去掉 0 意味着<strong>所有权重都非零</strong>——没有稀疏性可利用。
 幅度信息全靠 group scale，精度比三值化低。</p>
 <p>实测：1-bit Bonsai 保留 89.5% 能力，ternary 保留 98.2%。</p>
-<h2 id="group_size-128">group_size = 128 的甜点<a class="headerlink" href="#group_size-128" title="Permanent link">&para;</a></h2>
+<p>但 1-bit 的 <strong>Intelligence Density 更高</strong>（0.513 vs 0.437）——
+因为体积更小（3.9 GB vs 5.9 GB），在端侧预算下装得下才是王道。</p>
+<hr />
+<h2 id="3-group_size-128">3. group_size = 128 的甜点<a class="headerlink" href="#3-group_size-128" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 权衡<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <p>group 越小 → scale 越密 → 精度越高但 scale 开销越大。</p>
 <table>
 <thead>
@@ -1455,6 +1692,7 @@ $$\tilde{w} = \text{sign}(w)\]</div>
 <th>group_size</th>
 <th>scale 开销 (bpw)</th>
 <th>精度</th>
+<th>总 bpw</th>
 </tr>
 </thead>
 <tbody>
@@ -1462,61 +1700,130 @@ $$\tilde{w} = \text{sign}(w)\]</div>
 <td>32</td>
 <td>0.5</td>
 <td>高</td>
+<td>2.085</td>
 </tr>
 <tr>
 <td><strong>128</strong></td>
 <td><strong>0.125</strong></td>
 <td><strong>甜点</strong></td>
+<td><strong>1.71</strong></td>
 </tr>
 <tr>
 <td>256</td>
 <td>0.0625</td>
 <td>低</td>
+<td>1.648</td>
 </tr>
 </tbody>
 </table>
-<p>128 让 scale 开销压到可忽略（0.125 bpw），同时精度够好。
-Bonsai 模型卡片的 "Q1_0_g128" / "ternary g128" 即此。</p>
-<h2 id="ptq-vs-qat">PTQ vs QAT<a class="headerlink" href="#ptq-vs-qat" title="Permanent link">&para;</a></h2>
+<h3 id="32-128">3.2 为什么 128<a class="headerlink" href="#32-128" title="Permanent link">&para;</a></h3>
+<p>128 让 scale 开销压到可忽略（0.125 bpw），同时精度够好。</p>
+<ul>
+<li>太小（32）：scale 占 0.5 bpw，总 2.085 bpw——和 2-bit 量化差不多了，没省</li>
+<li>太大（256）：scale 省，但一个 scale 管 256 个权重，精度下降</li>
+<li><strong>128</strong>：scale 只占 0.125 bpw，精度够好——甜点</li>
+</ul>
+<p>Bonsai 模型卡片的 "Q1_0_g128" / "ternary g128" 即此。</p>
+<hr />
+<h2 id="4-ptq-vs-qat">4. PTQ vs QAT：核心差异<a class="headerlink" href="#4-ptq-vs-qat" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 两种方法<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>方法</th>
 <th>做法</th>
-<th>损失</th>
+<th>权重适应</th>
+<th>Bonsai 实测损失</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PTQ</td>
+<td>PTQ（训练后量化）</td>
 <td>训练完 FP16 → 再三值化</td>
+<td>否</td>
 <td>+0.90</td>
 </tr>
 <tr>
-<td><strong>QAT</strong></td>
-<td>训练时就三值化前向（STE）</td>
+<td><strong>QAT（量化感知训练）</strong></td>
+<td><strong>训练时就三值化前向</strong></td>
+<td><strong>是</strong></td>
 <td><strong>+0.32</strong></td>
 </tr>
 </tbody>
 </table>
-<p>QAT 用 Straight-Through Estimator 让梯度流过不可导的三值化：</p>
-<div class="arithmatex">\[\frac{\partial \tilde{w}}{\partial w} \approx 1 \quad \text{(STE)}\]</div>
-<p>权重在训练中<strong>主动适应</strong>低 bit 约束，学会在 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 上表达信息。</p>
-<p>详见 <code>experiments/04_qat_the_real_gain.py</code>。</p>
-<h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai</span><span class="w"> </span><span class="kn">import</span> <span class="n">ternarize</span><span class="p">,</span> <span class="n">binarize</span><span class="p">,</span> <span class="n">dequantize</span>
+<h3 id="42-ptq">4.2 PTQ 的问题<a class="headerlink" href="#42-ptq" title="Permanent link">&para;</a></h3>
+<p>PTQ 的权重是在 FP16 下训练的，<strong>没有"学会"在 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 上工作</strong>。
+三值化是训练后强加的，权重的分布和三值化的粒度不匹配。</p>
+<p>具体来说：</p>
+<ul>
+<li>FP16 训练出的权重分布是连续的，有很多"不大不小"的值（比如 <span class="arithmatex">\(w = 0.5\)</span>）</li>
+<li>三值化把 <span class="arithmatex">\(w = 0.5\)</span> 判成 0（低于阈值 <span class="arithmatex">\(0.7 \cdot \alpha\)</span>）——但这个权重可能很重要</li>
+<li>或者把 <span class="arithmatex">\(w = 0.8\)</span> 判成 +1——但它的真实幅度是 0.8，不是 1.0</li>
+</ul>
+<p>PTQ 没有机会调整这些"边界 case"——训练已经结束了。</p>
+<h3 id="43-qat">4.3 QAT 的做法<a class="headerlink" href="#43-qat" title="Permanent link">&para;</a></h3>
+<p>QAT 在训练时前向传播就用三值化权重：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># QAT 前向</span>
+<span class="n">w_real</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">weight</span>                    <span class="c1"># FP32 参数</span>
+<span class="n">w_ternary</span> <span class="o">=</span> <span class="n">ternarize</span><span class="p">(</span><span class="n">w_real</span><span class="p">)</span>            <span class="c1"># 三值化（前向用这个）</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">x</span> <span class="o">@</span> <span class="n">w_ternary</span><span class="o">.</span><span class="n">float</span><span class="p">()</span>           <span class="c1"># 前向用三值化权重</span>
 
-<span class="c1"># 三值化</span>
-<span class="n">trit</span><span class="p">,</span> <span class="n">scale</span> <span class="o">=</span> <span class="n">ternarize</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">group_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">threshold_ratio</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
-
-<span class="c1"># 二值化</span>
-<span class="n">sign</span><span class="p">,</span> <span class="n">scale</span> <span class="o">=</span> <span class="n">binarize</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">group_size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
-
-<span class="c1"># 反量化</span>
-<span class="n">W_approx</span> <span class="o">=</span> <span class="n">dequantize</span><span class="p">(</span><span class="n">trit</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">group_size</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
+<span class="c1"># QAT 反向（STE）</span>
+<span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>                          <span class="c1"># 梯度直接流给 w_real</span>
+<span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>                        <span class="c1"># w_real 根据梯度更新</span>
 </code></pre></div>
+<p>权重在训练中<strong>主动适应</strong>低 bit 约束——
+"边界 case"的权重会被梯度推到"三值化后损失最小"的位置。</p>
+<h3 id="44-ste">4.4 STE：让梯度流过不可导的三值化<a class="headerlink" href="#44-ste" title="Permanent link">&para;</a></h3>
+<p>三值化函数 <span class="arithmatex">\(w \mapsto \text{round}(w/\Delta) \in \{−1, 0, +1\}\)</span> 是<strong>不可导</strong>的（阶梯函数）。
+反向传播需要梯度，但阶梯函数的导数几乎处处为 0。</p>
+<p><strong>Straight-Through Estimator (STE)</strong> 的做法：</p>
+<div class="arithmatex">\[\frac{\partial \tilde{w}}{\partial w} \approx 1 \quad \text{(STE)}\]</div>
+<p>前向用三值化（<span class="arithmatex">\(\tilde{w} = \text{ternarize}(w)\)</span>），反向把梯度<strong>直接传给</strong>原始 <span class="arithmatex">\(w\)</span>（假装三值化是恒等函数）。</p>
+<p>这不"正确"（三值化的真实梯度不是 1），但<strong>有效</strong>——
+它让权重 <span class="arithmatex">\(w\)</span> 能收到梯度，在训练中逐步移动到"三值化后损失最小"的位置。</p>
+<h3 id="45-qat">4.5 QAT 和旋转的乘法关系<a class="headerlink" href="#45-qat" title="Permanent link">&para;</a></h3>
+<div class="admonition insight">
+<p class="admonition-title">旋转和 QAT 不是加法，是乘法</p>
+<ul>
+<li>旋转把"好量化的基"准备好了——权重在旋转后的基上更各向同性</li>
+<li>QAT 让权重<strong>学会</strong>在这个基上用 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 表达信息</li>
+</ul>
+<p>两者是<strong>乘法关系</strong>：
+- 只有旋转没 QAT：基好了但权重没适应 → PTQ 损失 +0.90
+- 只有 QAT 没旋转：权重适应了但基不好 → 误差仍沿敏感方向集中
+- <strong>两者都有</strong>：基好 + 权重适应 → QAT 损失 +0.32</p>
+</div>
 <hr />
-<p>详见 <code>bonsai/quantize.py</code>。</p>
+<h2 id="5-qat">5. QAT 的代价<a class="headerlink" href="#5-qat" title="Permanent link">&para;</a></h2>
+<p>QAT 不是免费的：</p>
+<ol>
+<li><strong>训练成本高</strong>：需要在三值化约束下训练，前向/反向都多一步</li>
+<li><strong>需要完整训练数据</strong>：不能像 PTQ 那样"拿现成模型压一下"</li>
+<li><strong>训练稳定性</strong>：STE 的梯度是近似的，训练初期可能不稳定</li>
+</ol>
+<p>但这些都是<strong>一次性成本</strong>（训练时付），换来的是<strong>永久收益</strong>（推理时一直享受低 bit + 高精度）。
+对于发布给大量用户使用的模型，这个权衡是值得的。</p>
+<hr />
+<h2 id="6">6. 实验验证<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p><code>experiments/04_qat_the_real_gain.py</code> 的核心输出：</p>
+<div class="highlight"><pre><span></span><code>PTQ（训练后三值化）: 损失 +0.90
+QAT（训练时三值化）: 损失 +0.32
+</code></pre></div>
+<p><strong>读法</strong>：</p>
+<ol>
+<li>PTQ 损失 +0.90——权重没适应低 bit，三值化是强加的</li>
+<li>QAT 损失 +0.32——权重学会了在 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 上工作</li>
+<li><strong>QAT 是 Bonsai 98% 能力保留的主要来源</strong></li>
+</ol>
+<hr />
+<h2 id="_2">进一步阅读<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../philosophy/why-not-collapse/">为什么 1.7 bit 不崩</a> — QAT 是三根支柱之一</li>
+<li><a href="../hadamard/">Hadamard 旋转</a> — 旋转 + QAT 的乘法关系</li>
+<li><a href="../xnor-popcount/">XNOR-popcount kernel</a> — 二值化的硬件优势</li>
+<li><code>bonsai/quantize.py</code> — 实现</li>
+</ul>
 
 
 

@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dspark-block-denoising-drafter" class="md-skip">
+        <a href="#dspark-block-denoising-drafter-diffusion-speculative-decoding" class="md-skip">
           跳转至
         </a>
       
@@ -791,33 +791,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#speculative-decoding" class="md-nav__link">
+  <a href="#1-speculative-decoding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        传统 speculative decoding
+        1. 传统 speculative decoding 的瓶颈
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dspark" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DSpark 的创新
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="DSpark 的创新">
+    <nav class="md-nav" aria-label="1. 传统 speculative decoding 的瓶颈">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        速度
+        1.1 基本流程
       
     </span>
   </a>
@@ -825,10 +814,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        质量
+        1.2 加速比公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-drafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 瓶颈：drafting 串行
       
     </span>
   </a>
@@ -841,22 +841,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#2-dspark-block-parallel-drafting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        训练细节
+        2. DSpark 的创新：block-parallel drafting
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="训练细节">
+    <nav class="md-nav" aria-label="2. DSpark 的创新：block-parallel drafting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#survival-probability-weighted-distillation" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        survival-probability-weighted distillation
+        2.1 核心想法
       
     </span>
   </a>
@@ -864,10 +864,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#per-source-normalized-hidden-state-taps" class="md-nav__link">
+  <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        per-source-normalized hidden-state taps
+        2.2 加速比改进
       
     </span>
   </a>
@@ -875,10 +875,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#draft-block-size-k" class="md-nav__link">
+  <a href="#23-causal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        draft block size \(k\) 的选择
+        2.3 质量代价：无 causal 依赖
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 无损保证：target 验证
       
     </span>
   </a>
@@ -891,22 +902,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workload" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        反直觉的 workload × 硬件依赖
+        3. 训练细节：三个关键设计
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="反直觉的 workload × 硬件依赖">
+    <nav class="md-nav" aria-label="3. 训练细节：三个关键设计">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#codemath" class="md-nav__link">
+  <a href="#31-block-denoising-objective" class="md-nav__link">
     <span class="md-ellipsis">
       
-        code/math 收益最大
+        3.1 Block-denoising objective
       
     </span>
   </a>
@@ -914,10 +925,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chatreasoning" class="md-nav__link">
+  <a href="#32-survival-probability-weighted-distillation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        chat/reasoning 收益少
+        3.2 Survival-probability-weighted distillation
       
     </span>
   </a>
@@ -925,10 +936,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#apple-silicon" class="md-nav__link">
+  <a href="#33-per-source-normalized-hidden-state-taps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Apple Silicon 上更慢
+        3.3 Per-source-normalized hidden-state taps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-draft-block-size-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Draft block size \(k\) 的选择
       
     </span>
   </a>
@@ -941,10 +963,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#4-workload" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代价
+        4. 反直觉的 workload × 硬件依赖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 反直觉的 workload × 硬件依赖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 实测加速比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-codemath" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 为什么 code/math 收益最大
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-chatreasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 为什么 chat/reasoning 收益少
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-apple-silicon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 为什么 Apple Silicon 上更慢
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 代价
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 代价">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-prompt-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 跨请求 prompt-cache 复用被禁
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-slot-np-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 单 slot（-np 1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 适用场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 上游化：社区认可
       
     </span>
   </a>
@@ -952,32 +1085,110 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        上游化
+        7. 代码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-blockdenoisingdrafter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 BlockDenoisingDrafter 的结构
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#72-vs-autoregressivedrafter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码
+        7.2 vs AutoregressiveDrafter
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实验验证
+        8. 实验验证
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 实验验证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 接受率对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 怎么读
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-code-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 code-like 为什么接受率高
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-chat-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 chat-like 为什么接受率低
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 进一步阅读
       
     </span>
   </a>
@@ -1288,33 +1499,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#speculative-decoding" class="md-nav__link">
+  <a href="#1-speculative-decoding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        传统 speculative decoding
+        1. 传统 speculative decoding 的瓶颈
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dspark" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        DSpark 的创新
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="DSpark 的创新">
+    <nav class="md-nav" aria-label="1. 传统 speculative decoding 的瓶颈">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        速度
+        1.1 基本流程
       
     </span>
   </a>
@@ -1322,10 +1522,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        质量
+        1.2 加速比公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-drafting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 瓶颈：drafting 串行
       
     </span>
   </a>
@@ -1338,22 +1549,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#2-dspark-block-parallel-drafting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        训练细节
+        2. DSpark 的创新：block-parallel drafting
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="训练细节">
+    <nav class="md-nav" aria-label="2. DSpark 的创新：block-parallel drafting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#survival-probability-weighted-distillation" class="md-nav__link">
+  <a href="#21" class="md-nav__link">
     <span class="md-ellipsis">
       
-        survival-probability-weighted distillation
+        2.1 核心想法
       
     </span>
   </a>
@@ -1361,10 +1572,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#per-source-normalized-hidden-state-taps" class="md-nav__link">
+  <a href="#22" class="md-nav__link">
     <span class="md-ellipsis">
       
-        per-source-normalized hidden-state taps
+        2.2 加速比改进
       
     </span>
   </a>
@@ -1372,10 +1583,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#draft-block-size-k" class="md-nav__link">
+  <a href="#23-causal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        draft block size \(k\) 的选择
+        2.3 质量代价：无 causal 依赖
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 无损保证：target 验证
       
     </span>
   </a>
@@ -1388,22 +1610,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workload" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        反直觉的 workload × 硬件依赖
+        3. 训练细节：三个关键设计
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="反直觉的 workload × 硬件依赖">
+    <nav class="md-nav" aria-label="3. 训练细节：三个关键设计">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#codemath" class="md-nav__link">
+  <a href="#31-block-denoising-objective" class="md-nav__link">
     <span class="md-ellipsis">
       
-        code/math 收益最大
+        3.1 Block-denoising objective
       
     </span>
   </a>
@@ -1411,10 +1633,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#chatreasoning" class="md-nav__link">
+  <a href="#32-survival-probability-weighted-distillation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        chat/reasoning 收益少
+        3.2 Survival-probability-weighted distillation
       
     </span>
   </a>
@@ -1422,10 +1644,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#apple-silicon" class="md-nav__link">
+  <a href="#33-per-source-normalized-hidden-state-taps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Apple Silicon 上更慢
+        3.3 Per-source-normalized hidden-state taps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-draft-block-size-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Draft block size \(k\) 的选择
       
     </span>
   </a>
@@ -1438,10 +1671,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#4-workload" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代价
+        4. 反直觉的 workload × 硬件依赖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 反直觉的 workload × 硬件依赖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 实测加速比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-codemath" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 为什么 code/math 收益最大
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-chatreasoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 为什么 chat/reasoning 收益少
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-apple-silicon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 为什么 Apple Silicon 上更慢
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 代价
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 代价">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-prompt-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 跨请求 prompt-cache 复用被禁
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-slot-np-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 单 slot（-np 1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 适用场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 上游化：社区认可
       
     </span>
   </a>
@@ -1449,32 +1793,110 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        上游化
+        7. 代码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-blockdenoisingdrafter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 BlockDenoisingDrafter 的结构
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#72-vs-autoregressivedrafter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码
+        7.2 vs AutoregressiveDrafter
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实验验证
+        8. 实验验证
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 实验验证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 接受率对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 怎么读
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-code-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 code-like 为什么接受率高
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-chat-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 chat-like 为什么接受率低
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 进一步阅读
       
     </span>
   </a>
@@ -1501,45 +1923,122 @@
   
 
 
-<h1 id="dspark-block-denoising-drafter">DSpark block-denoising drafter<a class="headerlink" href="#dspark-block-denoising-drafter" title="Permanent link">&para;</a></h1>
+<h1 id="dspark-block-denoising-drafter-diffusion-speculative-decoding">DSpark block-denoising drafter —— diffusion × speculative decoding<a class="headerlink" href="#dspark-block-denoising-drafter-diffusion-speculative-decoding" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>核心独创</strong>：diffusion × speculative decoding 的交叉——
-把 diffusion 的"整块去噪"嫁接到 token drafting。</p>
+<p><strong>主线</strong>：传统 speculative decoding 的瓶颈不在验证，而在 <strong>drafting 本身是串行的</strong>——
+草第 <span class="arithmatex">\(i\)</span> 个 token 要看前 <span class="arithmatex">\(i-1\)</span> 个，<span class="arithmatex">\(k\)</span> 个 token 需要 <span class="arithmatex">\(k\)</span> 次前向。
+DSpark 的核心独创是把 diffusion 的"整块去噪"嫁接到 token drafting：
+drafter <strong>一次并行草 <span class="arithmatex">\(k\)</span> 个 token</strong>，只需 1 次前向。
+但 block-parallel 草的每个 token 看不到同块后面的 token（无 causal 依赖），质量可能下降——
+DSpark 用三个训练技巧（survival-weighted distillation、hidden-state taps、cost-based block size）弥补，
+并靠 target 的逐个验证<strong>保无损</strong>。
+本文从传统 spec decoding 的瓶颈出发，推导 DSpark 的加速比公式，分析三个训练技巧的作用，
+最后用 code-like vs chat-like 实验展现<strong>加速是 workload-dependent 的</strong>——不是免费的。</p>
 </blockquote>
-<h2 id="speculative-decoding">传统 speculative decoding<a class="headerlink" href="#speculative-decoding" title="Permanent link">&para;</a></h2>
-<p>小模型（drafter）逐个<strong>自回归</strong>起草 token → 大模型（target）逐个验证。</p>
-<div class="highlight"><pre><span></span><code>drafter: 草 t1 → 草 t2(t1) → 草 t3(t1,t2) → ...  （串行 k 次前向）
-target:  验证 t1, t2, t3, ...                    （一次并行验证）
+<h2 id="1-speculative-decoding">1. 传统 speculative decoding 的瓶颈<a class="headerlink" href="#1-speculative-decoding" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 基本流程<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>Speculative decoding 用一个小模型（drafter）起草，大模型（target）验证：</p>
+<div class="highlight"><pre><span></span><code>drafter: 草 t₁ → 草 t₂(t₁) → 草 t₃(t₁,t₂) → ...  （串行 k 次前向）
+target:  验证 t₁, t₂, t₃, ...                    （1 次并行验证）
 </code></pre></div>
-<p><strong>瓶颈</strong>：drafting 本身是串行的——草第 <span class="arithmatex">\(i\)</span> 个 token 要看前 <span class="arithmatex">\(i-1\)</span> 个。
-加速比受限于 drafting 速度，不是验证速度。</p>
-<h2 id="dspark">DSpark 的创新<a class="headerlink" href="#dspark" title="Permanent link">&para;</a></h2>
-<p>drafter 是 <strong>block-parallel</strong> 的，一次并行草 <span class="arithmatex">\(k\)</span> 个 token。</p>
-<div class="highlight"><pre><span></span><code>drafter: 草 [t1, t2, t3, t4] 一次性  （1 次前向）
-target:  验证 t1, t2, t3, t4         （一次并行验证）
+<ul>
+<li><strong>drafter</strong> 逐个<strong>自回归</strong>起草 <span class="arithmatex">\(k\)</span> 个 token，每个依赖前一个</li>
+<li><strong>target</strong> 一次性并行验证所有 <span class="arithmatex">\(k\)</span> 个 token，接受匹配的前缀，从第一个不匹配处截断</li>
+</ul>
+<h3 id="12">1.2 加速比公式<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p>设：</p>
+<ul>
+<li><span class="arithmatex">\(t_d\)</span> = drafter 一次前向时间</li>
+<li><span class="arithmatex">\(t_v\)</span> = target 验证 <span class="arithmatex">\(k\)</span> 个 token 的时间（1 次并行前向）</li>
+<li><span class="arithmatex">\(\alpha\)</span> = 接受率（每个位置被接受的概率，假设独立）</li>
+</ul>
+<p>传统 spec decoding 的总时间：</p>
+<div class="arithmatex">\[
+T_{\text{trad}} = k \cdot t_d + t_v
+\]</div>
+<p>期望接受 token 数：<span class="arithmatex">\(E[\text{accepted}] = \frac{1 - (1-\alpha)^k}{\alpha}\)</span>（几何分布前缀）。</p>
+<p>加速比（vs 纯 target 自回归）：</p>
+<div class="arithmatex">\[
+S_{\text{trad}} = \frac{E[\text{accepted}] \cdot t_v}{k \cdot t_d + t_v}
+\]</div>
+<h3 id="13-drafting">1.3 瓶颈：drafting 串行<a class="headerlink" href="#13-drafting" title="Permanent link">&para;</a></h3>
+<p>当 <span class="arithmatex">\(k\)</span> 增大时，<strong><span class="arithmatex">\(k \cdot t_d\)</span> 线性增长</strong>，而 <span class="arithmatex">\(t_v\)</span> 近似常数（并行验证）。加速比的分子趋于 <span class="arithmatex">\(1/\alpha\)</span>（常数），分母趋于 <span class="arithmatex">\(k \cdot t_d\)</span>——<strong>加速比随 <span class="arithmatex">\(k\)</span> 增大而下降</strong>。</p>
+<div class="admonition insight">
+<p class="admonition-title">见解：瓶颈不在验证，在 drafting</p>
+<p>传统 spec decoding 的优化方向是"让 drafter 更准"（提高 <span class="arithmatex">\(\alpha\)</span>）或"让 drafter 更小"（降低 <span class="arithmatex">\(t_d\)</span>）。
+但这些都治标不治本——<strong>drafting 的串行性是结构性瓶颈</strong>。
+DSpark 的创新是直接消除这个串行性：block-parallel drafting。</p>
+</div>
+<h2 id="2-dspark-block-parallel-drafting">2. DSpark 的创新：block-parallel drafting<a class="headerlink" href="#2-dspark-block-parallel-drafting" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 核心想法<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>drafter <strong>不逐个草</strong>，而是给定 prefix 一次性预测整块 <span class="arithmatex">\(k\)</span> 个 token：</p>
+<div class="highlight"><pre><span></span><code>drafter: 草 [t₁, t₂, t₃, t₄] 一次性  （1 次前向）
+target:  验证 t₁, t₂, t₃, t₄         （1 次并行验证）
 </code></pre></div>
-<p>用 <strong>diffusion-flavored block-denoising objective</strong> 训练 drafter——
-给定 prefix 一次性预测整块 <span class="arithmatex">\(k\)</span> 个 token，而不是逐个自回归。</p>
-<h3 id="_1">速度<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>草 <span class="arithmatex">\(k\)</span> 个 token 只要 <strong>1 次前向</strong>（vs 自回归的 <span class="arithmatex">\(k\)</span> 次）。</p>
-<h3 id="_2">质量<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>可能比自回归差——每个 token 看不到同块后面的 token（没有 causal 依赖）。
-但<strong>验证保无损</strong>：target 逐个检查，不匹配的截断，accepted token 和普通生成不可区分。</p>
-<h2 id="_3">训练细节<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="survival-probability-weighted-distillation">survival-probability-weighted distillation<a class="headerlink" href="#survival-probability-weighted-distillation" title="Permanent link">&para;</a></h3>
-<p>训练时给"更可能被接受的位置"更高权重。</p>
-<p>speculative decoding 的接受概率随位置递减（越后面越可能被拒），
-所以训练时给前面的位置高权重，让 drafter 在"最可能被接受的位置"上更准。</p>
-<h3 id="per-source-normalized-hidden-state-taps">per-source-normalized hidden-state taps<a class="headerlink" href="#per-source-normalized-hidden-state-taps" title="Permanent link">&para;</a></h3>
-<p>从 target 的 5 个均匀间隔层 tap hidden state，做归一化后作为 drafter 输入。</p>
-<p>这让 drafter 能"看到" target 的中间表示，不只是最终 logits——
-信息更丰富，drafter 能更好地模仿 target 的行为。</p>
-<h3 id="draft-block-size-k">draft block size <span class="arithmatex">\(k\)</span> 的选择<a class="headerlink" href="#draft-block-size-k" title="Permanent link">&para;</a></h3>
+<h3 id="22">2.2 加速比改进<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p>DSpark 的总时间：</p>
+<div class="arithmatex">\[
+T_{\text{DSpark}} = t_d + t_v
+\]</div>
+<p>加速比：</p>
+<div class="arithmatex">\[
+S_{\text{DSpark}} = \frac{E[\text{accepted}] \cdot t_v}{t_d + t_v}
+\]</div>
+<p>vs 传统的 <span class="arithmatex">\(k \cdot t_d + t_v\)</span>——<strong>drafting 成本从 <span class="arithmatex">\(k \cdot t_d\)</span> 降到 <span class="arithmatex">\(t_d\)</span></strong>，<span class="arithmatex">\(k\)</span> 倍加速。</p>
+<p>当 <span class="arithmatex">\(t_d \ll t_v\)</span>（drafter 远小于 target）时：</p>
+<div class="arithmatex">\[
+S_{\text{DSpark}} \approx E[\text{accepted}] \approx \frac{1 - (1-\alpha)^k}{\alpha}
+\]</div>
+<p>理论上接近 <span class="arithmatex">\(1/\alpha\)</span>（<span class="arithmatex">\(\alpha\)</span> 高时接近 <span class="arithmatex">\(k\)</span>）。</p>
+<h3 id="23-causal">2.3 质量代价：无 causal 依赖<a class="headerlink" href="#23-causal" title="Permanent link">&para;</a></h3>
+<p>block-parallel 草的每个 token <span class="arithmatex">\(t_i\)</span> <strong>看不到同块后面的 token <span class="arithmatex">\(t_{i+1}, \ldots, t_k\)</span></strong>——它们是同时预测的，没有 causal 依赖。</p>
+<p>这可能导致质量下降：如果 <span class="arithmatex">\(t_{i+1}\)</span> 强依赖 <span class="arithmatex">\(t_i\)</span>（如自然语言），block drafter 在 <span class="arithmatex">\(t_{i+1}\)</span> 上的准确率低于自回归 drafter。</p>
+<h3 id="24-target">2.4 无损保证：target 验证<a class="headerlink" href="#24-target" title="Permanent link">&para;</a></h3>
+<p>但<strong>验证保无损</strong>：target 逐个检查每个 drafted token 是否匹配自己的 argmax，从第一个不匹配处截断。</p>
+<div class="arithmatex">\[
+\text{accepted} = \text{最长前缀使得 } t_i^{\text{draft}} = \text{target}.\text{argmax}(\text{prefix} + t_1^{\text{draft}} + \ldots + t_{i-1}^{\text{draft}})
+\]</div>
+<p>accepted token 和普通自回归生成<strong>不可区分</strong>——DSpark 的加速不牺牲精度，只可能"白草"（drafted token 被拒，浪费 drafter 前向）。</p>
+<div class="admonition insight">
+<p class="admonition-title">见解：DSpark 是"用 drafter 前向换 target 前向"的交易</p>
+<p>DSpark 的本质是：用 1 次 drafter 前向（便宜）赌 <span class="arithmatex">\(k\)</span> 个 token，target 验证（贵）只在有匹配时才"赚到"。
+如果接受率高（<span class="arithmatex">\(\alpha \approx 1\)</span>），1 次 drafter + 1 次 target 验证 ≈ <span class="arithmatex">\(k\)</span> 次 target 前向 → <span class="arithmatex">\(k\)</span> 倍加速。
+如果接受率低（<span class="arithmatex">\(\alpha \approx 0\)</span>），1 次 drafter + 1 次 target 验证 ≈ 1 次 target 前向 → 没有加速，还浪费了 drafter 前向。
+<strong>加速比完全由 <span class="arithmatex">\(\alpha\)</span> 决定</strong>，而 <span class="arithmatex">\(\alpha\)</span> 由 workload 决定。</p>
+</div>
+<h2 id="3">3. 训练细节：三个关键设计<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>block-parallel drafter 不能直接用"预测下一个 token"的交叉熵训练——它要<strong>一次预测 <span class="arithmatex">\(k\)</span> 个 token</strong>。DSpark 用三个技巧训练。</p>
+<h3 id="31-block-denoising-objective">3.1 Block-denoising objective<a class="headerlink" href="#31-block-denoising-objective" title="Permanent link">&para;</a></h3>
+<p>给定 prefix，drafter 一次输出 <span class="arithmatex">\(k\)</span> 个 logits（对每个位置 <span class="arithmatex">\(i \in [1, k]\)</span> 预测 <span class="arithmatex">\(\text{token}_{\text{prefix}+i}\)</span>）：</p>
+<div class="arithmatex">\[
+\mathcal{L} = \sum_{i=1}^{k} w_i \cdot \text{CE}(\text{logits}_i, \text{target\_token}_i)
+\]</div>
+<p>其中 <span class="arithmatex">\(w_i\)</span> 是位置 <span class="arithmatex">\(i\)</span> 的权重（见下文 survival-weighted）。</p>
+<p>这和 diffusion 的 block-denoising 类似——给定"被遮蔽的块"一次性预测整块，而不是逐个自回归。<strong>这是"diffusion × speculative decoding"交叉的来源</strong>。</p>
+<h3 id="32-survival-probability-weighted-distillation">3.2 Survival-probability-weighted distillation<a class="headerlink" href="#32-survival-probability-weighted-distillation" title="Permanent link">&para;</a></h3>
+<p>speculative decoding 的接受概率随位置递减——越后面的 token 越可能被拒（因为前面的误差会累积）。</p>
+<p>DSpark 给<strong>更可能被接受的位置</strong>（前面的位置）更高权重：</p>
+<div class="arithmatex">\[
+w_i \propto \prod_{j=1}^{i-1} \alpha_j \quad \text{(survival probability)}
+\]</div>
+<p>其中 <span class="arithmatex">\(\alpha_j\)</span> 是位置 <span class="arithmatex">\(j\)</span> 的接受概率。这让 drafter 在"最可能被接受的位置"上更准——<strong>优化的是有效 token 数，不是所有位置的均匀精度</strong>。</p>
+<h3 id="33-per-source-normalized-hidden-state-taps">3.3 Per-source-normalized hidden-state taps<a class="headerlink" href="#33-per-source-normalized-hidden-state-taps" title="Permanent link">&para;</a></h3>
+<p>drafter 不只看 token id，还从 target 的 <strong>5 个均匀间隔层 tap hidden state</strong>，做归一化后作为额外输入：</p>
+<div class="arithmatex">\[
+\text{drafter\_input} = [\text{embed}(t), \, \text{norm}(h^{(l_1)}), \, \text{norm}(h^{(l_2)}), \, \ldots, \, \text{norm}(h^{(l_5)})]
+\]</div>
+<p>这让 drafter 能"看到" target 的中间表示，不只是最终 logits——信息更丰富，drafter 能更好地模仿 target 的行为。</p>
+<p><strong>为什么是 5 层？</strong> 太少（1-2 层）信息不够，太多（所有层）开销大且冗余。5 层是经验值——足够覆盖 target 的不同抽象层次。</p>
+<h3 id="34-draft-block-size-k">3.4 Draft block size <span class="arithmatex">\(k\)</span> 的选择<a class="headerlink" href="#34-draft-block-size-k" title="Permanent link">&para;</a></h3>
 <p><span class="arithmatex">\(k\)</span> 从 <strong>measured verify-cost model</strong> 选——先测验证成本，再反推最优 <span class="arithmatex">\(k\)</span>。</p>
-<p>验证成本 = target 验证 <span class="arithmatex">\(k\)</span> 个 token 的时间。
-drafting 成本 = drafter 1 次前向的时间。
-最优 <span class="arithmatex">\(k\)</span> = 让 (drafting + verify) 最小的 <span class="arithmatex">\(k\)</span>。</p>
-<h2 id="workload">反直觉的 workload × 硬件依赖<a class="headerlink" href="#workload" title="Permanent link">&para;</a></h2>
+<div class="arithmatex">\[
+k^* = \arg\max_k \frac{E[\text{accepted}(k)] \cdot t_v}{t_d + t_v(k)}
+\]</div>
+<p>其中 <span class="arithmatex">\(t_v(k)\)</span> 是 target 验证 <span class="arithmatex">\(k\)</span> 个 token 的时间（随 <span class="arithmatex">\(k\)</span> 缓慢增长，因为并行）。</p>
+<p><strong>这不是"越大越好"</strong>——<span class="arithmatex">\(k\)</span> 太大时接受率下降（后面的 token 越难猜），且 <span class="arithmatex">\(t_v(k)\)</span> 增长。最优 <span class="arithmatex">\(k\)</span> 是接受率和验证成本的平衡点。</p>
+<h2 id="4-workload">4. 反直觉的 workload × 硬件依赖<a class="headerlink" href="#4-workload" title="Permanent link">&para;</a></h2>
+<p>DSpark 的加速比<strong>强 workload-dependent × 硬件-dependent</strong>。这是它最反直觉的特性——不是" universally 加速"。</p>
+<h3 id="41">4.1 实测加速比<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1566,31 +2065,53 @@ drafting 成本 = drafter 1 次前向的时间。
 </tr>
 </tbody>
 </table>
-<h3 id="codemath">code/math 收益最大<a class="headerlink" href="#codemath" title="Permanent link">&para;</a></h3>
-<p>代码和数学的下一个 token 高度可预测（语法结构强），drafter 接受率高（~0.9）。
-block-denoising 的"看不到同块后面"的劣势小——因为高可预测性意味着 <span class="arithmatex">\(t_{i+1}\)</span> 基本由 prefix 决定，不太依赖 <span class="arithmatex">\(t_i\)</span>。</p>
-<h3 id="chatreasoning">chat/reasoning 收益少<a class="headerlink" href="#chatreasoning" title="Permanent link">&para;</a></h3>
-<p>自然语言多样性高，下一个 token 不确定性强，接受率低。
-block-denoising 的劣势大——<span class="arithmatex">\(t_{i+1}\)</span> 强依赖 <span class="arithmatex">\(t_i\)</span>，看不到就猜不准。</p>
-<h3 id="apple-silicon">Apple Silicon 上更慢<a class="headerlink" href="#apple-silicon" title="Permanent link">&para;</a></h3>
-<p>batch-1 的验证 pass 在 Metal 上不 amortize。
-这不是"还没优化"，是<strong>架构层面的根本性差异</strong>——Metal 的 batch-1 kernel 启动开销高。</p>
-<h2 id="_4">代价<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="42-codemath">4.2 为什么 code/math 收益最大<a class="headerlink" href="#42-codemath" title="Permanent link">&para;</a></h3>
+<p>代码和数学的下一个 token <strong>高度可预测</strong>（语法结构强、重复模式多），drafter 接受率高（<span class="arithmatex">\(\alpha \approx 0.9\)</span>）。</p>
+<p>block-denoising 的"看不到同块后面"的劣势小——因为高可预测性意味着 <span class="arithmatex">\(t_{i+1}\)</span> 基本由 prefix 决定，不太依赖 <span class="arithmatex">\(t_i\)</span>：</p>
+<div class="arithmatex">\[
+P(t_{i+1} \mid \text{prefix}, t_i) \approx P(t_{i+1} \mid \text{prefix})
+\]</div>
+<p>所以 block-parallel 草的准确率接近自回归草，加速比接近 <span class="arithmatex">\(k\)</span>。</p>
+<h3 id="43-chatreasoning">4.3 为什么 chat/reasoning 收益少<a class="headerlink" href="#43-chatreasoning" title="Permanent link">&para;</a></h3>
+<p>自然语言多样性高，下一个 token 不确定性强，接受率低（<span class="arithmatex">\(\alpha \approx 0.3\)</span>）。</p>
+<p>block-denoising 的劣势大——<span class="arithmatex">\(t_{i+1}\)</span> 强依赖 <span class="arithmatex">\(t_i\)</span>（语义连贯性），看不到就猜不准：</p>
+<div class="arithmatex">\[
+P(t_{i+1} \mid \text{prefix}, t_i) \gg P(t_{i+1} \mid \text{prefix})
+\]</div>
+<p>block-parallel 草的准确率远低于自回归草，接受率低，加速比小。</p>
+<h3 id="44-apple-silicon">4.4 为什么 Apple Silicon 上更慢<a class="headerlink" href="#44-apple-silicon" title="Permanent link">&para;</a></h3>
+<p>batch-1 的验证 pass 在 Metal 上<strong>不 amortize</strong>——kernel 启动开销高，并行验证 <span class="arithmatex">\(k\)</span> 个 token 的成本不比 <span class="arithmatex">\(k\)</span> 次串行低多少。</p>
+<p>这不是"还没优化"，是<strong>架构层面的根本性差异</strong>——Metal 的 batch-1 kernel 启动开销高，与 CUDA 的 sustained throughput 模型不同。</p>
+<div class="admonition insight">
+<p class="admonition-title">见解：DSpark 不是" universally 加速"，是"特定场景加速"</p>
+<p>DSpark 的加速依赖 <strong>workload 可预测性 × 硬件 batch 效率</strong> 两个条件同时满足。
+这意味着 DSpark 的适用场景是<strong>明确的</strong>：code/math 生成 + CUDA 硬件。
+在其他场景（chat/reasoning + Metal）上，DSpark 可能<strong>不加速甚至减速</strong>。
+这不是缺陷——这是对"speculative decoding 能 universally 加速"这个假设的修正。</p>
+</div>
+<h2 id="5">5. 代价<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>DSpark 的加速不是免费的，有两个结构性代价：</p>
+<h3 id="51-prompt-cache">5.1 跨请求 prompt-cache 复用被禁<a class="headerlink" href="#51-prompt-cache" title="Permanent link">&para;</a></h3>
+<p>DSpark 的 drafter 需要从 target tap hidden state，这要求 <strong>target 和 drafter 在同一进程</strong>，且 target 的中间状态可用。</p>
+<p>这禁用了跨请求的 prompt-cache 复用——每个请求要 <strong>re-prefill 全部历史</strong>，不能复用之前请求的 KV cache。</p>
+<h3 id="52-slot-np-1">5.2 单 slot（<code>-np 1</code>）<a class="headerlink" href="#52-slot-np-1" title="Permanent link">&para;</a></h3>
+<p>不能并行处理多个请求——drafter 和 target 必须独占 GPU。</p>
+<h3 id="53">5.3 适用场景<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<p>这是"<strong>用吞吐换延迟</strong>"的选择：</p>
 <ul>
-<li><strong>跨请求 prompt-cache 复用被禁</strong>：每个请求要 re-prefill 全部历史</li>
-<li><strong>单 slot</strong>（<code>-np 1</code>）：不能并行处理多个请求</li>
+<li><strong>适合</strong>：交互式端侧场景（单用户、低延迟优先）</li>
+<li><strong>不适合</strong>：高并发服务端（多用户、吞吐优先）</li>
 </ul>
-<p>这是"用吞吐换延迟"的选择——适合交互式端侧场景，不适合高并发服务端。</p>
-<h2 id="_5">上游化<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>DSpark 已 upstream 到 mainline llama.cpp（PR #25173，<code>draft-dspark</code>）。
-标志着 Bonsai 的算法创新已被社区认可。</p>
-<h2 id="_6">代码<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="6">6. 上游化：社区认可<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>DSpark 已 upstream 到 mainline llama.cpp（PR #25173，<code>draft-dspark</code>）。</p>
+<p>这标志着 Bonsai 的算法创新<strong>已被社区认可</strong>——不是只存在于论文的 prototype，而是进入了主流推理框架。</p>
+<h2 id="7">7. 代码<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai.dspark</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
     <span class="n">TargetModel</span><span class="p">,</span> <span class="n">AutoregressiveDrafter</span><span class="p">,</span> <span class="n">BlockDenoisingDrafter</span><span class="p">,</span>
     <span class="n">verify</span><span class="p">,</span> <span class="n">train_drafter</span><span class="p">,</span> <span class="n">make_sequence</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="c1"># 造数据</span>
+<span class="c1"># 造数据：code-like（高可预测）vs chat-like（低可预测）</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">make_sequence</span><span class="p">(</span><span class="s2">&quot;code&quot;</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">vocab</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
 <span class="c1"># 训练 drafter</span>
@@ -1599,11 +2120,26 @@ block-denoising 的劣势大——<span class="arithmatex">\(t_{i+1}\)</span> �
 <span class="n">train_drafter</span><span class="p">(</span><span class="n">block_drafter</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 
 <span class="c1"># 起草 + 验证</span>
-<span class="n">drafted</span> <span class="o">=</span> <span class="n">block_drafter</span><span class="o">.</span><span class="n">draft</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>      <span class="c1"># 1 次前向</span>
+<span class="n">drafted</span> <span class="o">=</span> <span class="n">block_drafter</span><span class="o">.</span><span class="n">draft</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>      <span class="c1"># 1 次前向（vs 自回归 4 次）</span>
 <span class="n">accepted</span> <span class="o">=</span> <span class="n">verify</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">drafted</span><span class="p">)</span>       <span class="c1"># 无损验证</span>
 </code></pre></div>
-<h2 id="_7">实验验证<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="71-blockdenoisingdrafter">7.1 BlockDenoisingDrafter 的结构<a class="headerlink" href="#71-blockdenoisingdrafter" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">BlockDenoisingDrafter</span><span class="p">:</span>
+    <span class="n">embed</span><span class="p">:</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span>
+    <span class="n">rnn</span><span class="p">:</span> <span class="n">GRU</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span>
+    <span class="n">head</span><span class="p">:</span> <span class="n">Linear</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">vocab</span> <span class="o">*</span> <span class="n">block_size</span><span class="p">)</span>  <span class="c1"># 一次输出 k 个 logits</span>
+</code></pre></div>
+<p><code>head</code> 的输出维度是 <code>vocab * block_size</code>——一次前向输出 <span class="arithmatex">\(k\)</span> 个位置的 logits，reshape 成 <span class="arithmatex">\((k, \text{vocab})\)</span> 后 argmax。</p>
+<h3 id="72-vs-autoregressivedrafter">7.2 vs AutoregressiveDrafter<a class="headerlink" href="#72-vs-autoregressivedrafter" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">AutoregressiveDrafter</span><span class="p">:</span>
+    <span class="n">embed</span><span class="p">:</span> <span class="n">Embedding</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span>
+    <span class="n">rnn</span><span class="p">:</span> <span class="n">GRU</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">dim</span><span class="p">)</span>
+    <span class="n">head</span><span class="p">:</span> <span class="n">Linear</span><span class="p">(</span><span class="n">dim</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>  <span class="c1"># 只输出 1 个 logit</span>
+</code></pre></div>
+<p>自回归 drafter 的 <code>head</code> 只输出 1 个 logit，<code>draft(prefix, k)</code> 要循环 <span class="arithmatex">\(k\)</span> 次，每次把新 token 拼到 prefix 上再前向。</p>
+<h2 id="8">8. 实验验证<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
 <p><code>experiments/05_dspark_block_denoising.py</code>：</p>
+<h3 id="81">8.1 接受率对比<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1628,9 +2164,38 @@ block-denoising 的劣势大——<span class="arithmatex">\(t_{i+1}\)</span> �
 </tr>
 </tbody>
 </table>
-<p>code-like 接受率远高于 chat-like——<strong>workload-dependent</strong> 现象可见。</p>
-<hr />
-<p>详见 <code>bonsai/dspark.py</code>。</p>
+<h3 id="82">8.2 怎么读<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>block drafter 快 ~4x</strong>（1 次前向 vs <span class="arithmatex">\(k=4\)</span> 次）——这是 DSpark 的速度来源，与 workload 无关</li>
+<li><strong>code-like 接受率远高于 chat-like</strong>（0.96 vs 0.29）——<strong>workload-dependent</strong> 现象可见</li>
+<li><strong>block 和自回归的接受率几乎相同</strong>（0.96 vs 0.97, 0.29 vs 0.28）——block-denoising 的质量损失在本实验中很小</li>
+<li><strong>验证无损</strong>：accepted token 和普通生成不可区分</li>
+</ol>
+<h3 id="83-code-like">8.3 code-like 为什么接受率高<a class="headerlink" href="#83-code-like" title="Permanent link">&para;</a></h3>
+<p><code>make_sequence("code")</code> 生成重复 pattern + 少量 noise：</p>
+<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">seq</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">length</span> <span class="o">//</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 强重复结构</span>
+</code></pre></div>
+<p>下一个 token 高度可预测（<span class="arithmatex">\(\alpha \approx 0.97\)</span>），block drafter 也能准确预测。</p>
+<h3 id="84-chat-like">8.4 chat-like 为什么接受率低<a class="headerlink" href="#84-chat-like" title="Permanent link">&para;</a></h3>
+<p><code>make_sequence("chat")</code> 生成随机序列 + 少量 pattern：</p>
+<div class="highlight"><pre><span></span><code><span class="n">seq</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">vocab</span><span class="p">,</span> <span class="p">(</span><span class="n">length</span><span class="p">,))</span>  <span class="c1"># 几乎全随机</span>
+</code></pre></div>
+<p>下一个 token 不确定性强（<span class="arithmatex">\(\alpha \approx 0.29\)</span>），drafter 很难猜对——<strong>这是 workload 的本质差异，不是 drafter 的缺陷</strong>。</p>
+<div class="admonition insight">
+<p class="admonition-title">见解：加速比 = 速度 × 接受率</p>
+<p>code-like 的有效加速比 = 4.2x × 0.96 ≈ <strong>4.0x</strong>（几乎完美）
+chat-like 的有效加速比 = 4.1x × 0.29 ≈ <strong>1.2x</strong>（收益很小）
+DSpark 的实际收益是"速度提升 × 接受率"——速度提升恒定（~4x），接受率由 workload 决定。
+所以 DSpark 的适用场景是<strong>高可预测 workload</strong>（code/math），不是所有场景。</p>
+</div>
+<h2 id="9">9. 进一步阅读<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="../../philosophy/innovation-lineage/">Innovation lineage</a></strong>：DSpark 在 Bonsai 谱系中的位置——独创 vs 借鉴</li>
+<li><strong><a href="../../philosophy/intelligence-density/">Intelligence Density</a></strong>：为什么端侧延迟比吞吐重要</li>
+<li><strong><a href="../../architecture/transformer/">Transformer 架构</a></strong>：target 模型的结构</li>
+<li><strong><code>bonsai/dspark.py</code></strong>：完整实现</li>
+</ul>
 
 
 

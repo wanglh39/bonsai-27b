@@ -763,22 +763,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-packing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        两种格式
+        1. 为什么需要 packing
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="两种格式">
+    <nav class="md-nav" aria-label="1. 为什么需要 packing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ptq1_0dense-trit-packing" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PTQ1_0：dense trit packing
+        1.1 三值化的信息论下界
       
     </span>
   </a>
@@ -786,10 +786,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pq2_02-bit-slot" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PQ2_0：2-bit slot
+        1.2 打包的核心矛盾
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-group-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 group scale 的额外开销
       
     </span>
   </a>
@@ -802,33 +813,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2-ptq1_0dense-trit-packing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        密度对比
+        2. PTQ1_0：dense trit packing
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        架构敏感性
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="架构敏感性">
+    <nav class="md-nav" aria-label="2. PTQ1_0：dense trit packing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ada-l4ptq1_0" class="md-nav__link">
+  <a href="#21-5-trit-8-bit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ada / L4：PTQ1_0 更快
+        2.1 信息论基础：为什么是 5 trit → 8 bit
       
     </span>
   </a>
@@ -836,10 +836,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#h100-blackwellpq2_0" class="md-nav__link">
+  <a href="#22-base-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        H100 / Blackwell：PQ2_0 更快
+        2.2 编码：base-3 整数
       
     </span>
   </a>
@@ -847,10 +847,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#apple-silicon1-bit-xnor" class="md-nav__link">
+  <a href="#23-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Apple Silicon：1-bit XNOR 优势小
+        2.3 解码：5 次除法 + 取模
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 密度
       
     </span>
   </a>
@@ -863,32 +874,260 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#3-pq2_02-bit-slot-packing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码
+        3. PQ2_0：2-bit slot packing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. PQ2_0：2-bit slot packing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 设计哲学：对齐换速度
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#group-scale" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#32-4-trit-8-bit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        group scale
+        3.2 编码：4 trit → 8 bit
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#33-shift-mask" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实验验证
+        3.3 解码：shift + mask
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 密度对比与信息论视角
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 密度对比与信息论视角">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 三种格式的完整对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 信息论效率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 架构敏感性：为什么最优格式取决于硬件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 架构敏感性：为什么最优格式取决于硬件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-ada-l4ptq1_0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Ada / L4：PTQ1_0 更快
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-h100-blackwellpq2_0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 H100 / Blackwell：PQ2_0 更快
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-apple-silicon1-bit-xnor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Apple Silicon：1-bit XNOR 优势小
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实现细节
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 实现细节">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-ptq1_0-packunpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 PTQ1_0 pack/unpack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-pq2_0-packunpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 PQ2_0 pack/unpack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 密度计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-group-scale-matmul" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 group scale 在 matmul 中的作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 实验验证
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 实验验证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 密度验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-roundtrip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Roundtrip 精度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 进一步阅读
       
     </span>
   </a>
@@ -1227,22 +1466,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-packing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        两种格式
+        1. 为什么需要 packing
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="两种格式">
+    <nav class="md-nav" aria-label="1. 为什么需要 packing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ptq1_0dense-trit-packing" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PTQ1_0：dense trit packing
+        1.1 三值化的信息论下界
       
     </span>
   </a>
@@ -1250,10 +1489,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#pq2_02-bit-slot" class="md-nav__link">
+  <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PQ2_0：2-bit slot
+        1.2 打包的核心矛盾
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-group-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 group scale 的额外开销
       
     </span>
   </a>
@@ -1266,33 +1516,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2-ptq1_0dense-trit-packing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        密度对比
+        2. PTQ1_0：dense trit packing
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        架构敏感性
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="架构敏感性">
+    <nav class="md-nav" aria-label="2. PTQ1_0：dense trit packing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ada-l4ptq1_0" class="md-nav__link">
+  <a href="#21-5-trit-8-bit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ada / L4：PTQ1_0 更快
+        2.1 信息论基础：为什么是 5 trit → 8 bit
       
     </span>
   </a>
@@ -1300,10 +1539,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#h100-blackwellpq2_0" class="md-nav__link">
+  <a href="#22-base-3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        H100 / Blackwell：PQ2_0 更快
+        2.2 编码：base-3 整数
       
     </span>
   </a>
@@ -1311,10 +1550,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#apple-silicon1-bit-xnor" class="md-nav__link">
+  <a href="#23-5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Apple Silicon：1-bit XNOR 优势小
+        2.3 解码：5 次除法 + 取模
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 密度
       
     </span>
   </a>
@@ -1327,32 +1577,260 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#3-pq2_02-bit-slot-packing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码
+        3. PQ2_0：2-bit slot packing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. PQ2_0：2-bit slot packing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 设计哲学：对齐换速度
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#group-scale" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#32-4-trit-8-bit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        group scale
+        3.2 编码：4 trit → 8 bit
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#33-shift-mask" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实验验证
+        3.3 解码：shift + mask
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 密度对比与信息论视角
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 密度对比与信息论视角">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 三种格式的完整对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 信息论效率
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 架构敏感性：为什么最优格式取决于硬件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 架构敏感性：为什么最优格式取决于硬件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-ada-l4ptq1_0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Ada / L4：PTQ1_0 更快
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-h100-blackwellpq2_0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 H100 / Blackwell：PQ2_0 更快
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-apple-silicon1-bit-xnor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Apple Silicon：1-bit XNOR 优势小
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实现细节
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 实现细节">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-ptq1_0-packunpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 PTQ1_0 pack/unpack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-pq2_0-packunpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 PQ2_0 pack/unpack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 密度计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-group-scale-matmul" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 group scale 在 matmul 中的作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 实验验证
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 实验验证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 密度验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-roundtrip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Roundtrip 精度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 进一步阅读
       
     </span>
   </a>
@@ -1379,102 +1857,278 @@
   
 
 
-<h1 id="ptq1_0-pq2_0-packing">PTQ1_0 / PQ2_0 packing<a class="headerlink" href="#ptq1_0-pq2_0-packing" title="Permanent link">&para;</a></h1>
+<h1 id="ptq1_0-pq2_0-packing">PTQ1_0 / PQ2_0 packing —— 三值化权重的两种打包格式<a class="headerlink" href="#ptq1_0-pq2_0-packing" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>核心</strong>：三值化权重的两种打包格式，<strong>架构敏感</strong>——Ada/L4 上 PTQ1_0 快，H100/Blackwell 上 PQ2_0 快。</p>
+<p><strong>主线</strong>：三值化权重 <span class="arithmatex">\(\{-1, 0, +1\}\)</span> 理论上只需 <span class="arithmatex">\(\log_2 3 \approx 1.585\)</span> bit，但硬件不能处理"1.585 个 bit"——
+必须打包成整数字节。<strong>怎么打包</strong>是一个信息论 + 硬件工程的交叉问题：
+PTQ1_0 用 base-3 编码逼近信息论下界（1.6 bpw），PQ2_0 用 2-bit slot 换取解码速度（2.0 bpw）。
+两者差 0.4 bpw，在 27B 模型上差 ~2 GB——但<strong>哪个更快取决于硬件</strong>，这不是实现差异，是架构差异。
+本文从信息论下界出发，推导两种格式的编码/解码数学，分析它们的硬件行为，最后用实验验证 roundtrip 精度。</p>
 </blockquote>
-<h2 id="_1">两种格式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="ptq1_0dense-trit-packing">PTQ1_0：dense trit packing<a class="headerlink" href="#ptq1_0dense-trit-packing" title="Permanent link">&para;</a></h3>
-<p>5 个 trit 打包进 8 bit。</p>
-<div class="arithmatex">\[3^5 = 243 &lt; 256 = 2^8\]</div>
-<p>所以 5 个 trit（每个 <span class="arithmatex">\(\in \{0, 1, 2\}\)</span>）可以编码成一个 base-3 整数（0..242），存进 1 byte。</p>
-<div class="arithmatex">\[\text{packed} = t_0 \cdot 81 + t_1 \cdot 27 + t_2 \cdot 9 + t_3 \cdot 3 + t_4\]</div>
-<ul>
-<li><strong>密度</strong>：<span class="arithmatex">\(8/5 = 1.6\)</span> bpw + scale 0.125 = <strong>1.725 bpw</strong></li>
-<li><strong>解包</strong>：需要 5 次除法 + 取模（base-3 解码）</li>
-<li><strong>优势</strong>：最省空间</li>
-</ul>
-<h3 id="pq2_02-bit-slot">PQ2_0：2-bit slot<a class="headerlink" href="#pq2_02-bit-slot" title="Permanent link">&para;</a></h3>
-<p>每个 trit 占 2-bit slot。<span class="arithmatex">\(\{−1, 0, +1\} \to \{0, 1, 2\}\)</span>，存进 2 bit（slot 3 unused）。
-4 个 trit 打包进 1 byte。</p>
-<div class="arithmatex">\[\text{packed} = t_0 \,|\, (t_1 \ll 2) \,|\, (t_2 \ll 4) \,|\, (t_3 \ll 6)\]</div>
-<ul>
-<li><strong>密度</strong>：<span class="arithmatex">\(2 + 0.125 = 2.125\)</span> bpw</li>
-<li><strong>解包</strong>：只需 shift + mask（位运算）</li>
-<li><strong>优势</strong>：解码简单，对齐友好</li>
-</ul>
-<h2 id="_2">密度对比<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="1-packing">1. 为什么需要 packing<a class="headerlink" href="#1-packing" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 三值化的信息论下界<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>三值化权重 <span class="arithmatex">\(w \in \{-1, 0, +1\}\)</span> 有 3 个可能值，携带信息量：</p>
+<div class="arithmatex">\[
+I(w) = \log_2 3 \approx 1.585 \text{ bit}
+\]</div>
+<p>这是<strong>每个权重的理论最少 bit 数</strong>。任何无损编码的平均 bit 数不能低于这个值（信源编码定理）。</p>
+<p>但硬件以 <strong>byte（8 bit）</strong> 为最小寻址单位，不能存"1.585 个 bit"。必须把多个 trit 打包进整数字节。</p>
+<h3 id="12">1.2 打包的核心矛盾<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<p>打包格式面对一个根本性矛盾：</p>
+<table>
+<thead>
+<tr>
+<th>目标</th>
+<th>方向</th>
+<th>代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>省空间</strong></td>
+<td>逼近 1.585 bpw</td>
+<td>编码/解码复杂（非对齐访问）</td>
+</tr>
+<tr>
+<td><strong>解码快</strong></td>
+<td>对齐到 2 bit</td>
+<td>浪费 slot 3（0.415 bit/trit 浪费）</td>
+</tr>
+</tbody>
+</table>
+<p>PTQ1_0 选前者，PQ2_0 选后者。<strong>没有 universally 最优的 packing</strong>——最优是 workload × 硬件的函数。</p>
+<h3 id="13-group-scale">1.3 group scale 的额外开销<a class="headerlink" href="#13-group-scale" title="Permanent link">&para;</a></h3>
+<p>两种格式都配 group scale：每 128 个权重共享 1 个 FP16 scale（16 bit）。</p>
+<div class="arithmatex">\[
+\text{scale\_bpw} = \frac{16}{128} = 0.125 \text{ bpw}
+\]</div>
+<p>这是<strong>固定开销</strong>，与 packing 格式无关。下文 bpw 都已包含这 0.125。</p>
+<h2 id="2-ptq1_0dense-trit-packing">2. PTQ1_0：dense trit packing<a class="headerlink" href="#2-ptq1_0dense-trit-packing" title="Permanent link">&para;</a></h2>
+<h3 id="21-5-trit-8-bit">2.1 信息论基础：为什么是 5 trit → 8 bit<a class="headerlink" href="#21-5-trit-8-bit" title="Permanent link">&para;</a></h3>
+<p>PTQ1_0 的核心问题是：<strong>多少个 trit 能塞进 1 个 byte？</strong></p>
+<p><span class="arithmatex">\(n\)</span> 个 trit 携带 <span class="arithmatex">\(3^n\)</span> 种状态，1 byte 有 <span class="arithmatex">\(2^8 = 256\)</span> 种状态。需要：</p>
+<div class="arithmatex">\[
+3^n \leq 256
+\]</div>
+<p>取对数：</p>
+<div class="arithmatex">\[
+n \leq \frac{8}{\log_2 3} = \frac{8}{1.585} \approx 5.05
+\]</div>
+<p>所以 <span class="arithmatex">\(n = 5\)</span>：<strong>5 个 trit 打包进 8 bit</strong>，利用率：</p>
+<div class="arithmatex">\[
+\eta = \frac{\log_2(3^5)}{8} = \frac{5 \times 1.585}{8} = \frac{7.925}{8} = 99.1\%
+\]</div>
+<p>99.1% 的字节利用率——几乎无损地逼近信息论下界。浪费的只有 <span class="arithmatex">\(256 - 243 = 13\)</span> 个编码点（5.1%）。</p>
+<h3 id="22-base-3">2.2 编码：base-3 整数<a class="headerlink" href="#22-base-3" title="Permanent link">&para;</a></h3>
+<p>把 5 个 trit <span class="arithmatex">\(\{-1, 0, +1\}\)</span> 先映射到 <span class="arithmatex">\(\{0, 1, 2\}\)</span>（加 1），再编码成 base-3 整数：</p>
+<div class="arithmatex">\[
+\text{packed} = t_0 \cdot 3^4 + t_1 \cdot 3^3 + t_2 \cdot 3^2 + t_3 \cdot 3^1 + t_4 \cdot 3^0
+\]</div>
+<div class="arithmatex">\[
+= t_0 \cdot 81 + t_1 \cdot 27 + t_2 \cdot 9 + t_3 \cdot 3 + t_4
+\]</div>
+<p>其中 <span class="arithmatex">\(t_i \in \{0, 1, 2\}\)</span>，<span class="arithmatex">\(\text{packed} \in [0, 242]\)</span>，存进 1 个 uint8。</p>
+<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">trits</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>  <span class="c1"># {-1,0,+1} → {0,1,2}</span>
+<span class="n">packed</span> <span class="o">=</span> <span class="n">t</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">81</span> <span class="o">+</span> <span class="n">t</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">27</span> <span class="o">+</span> <span class="n">t</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">+</span> <span class="n">t</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">t</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="23-5">2.3 解码：5 次除法 + 取模<a class="headerlink" href="#23-5" title="Permanent link">&para;</a></h3>
+<p>解码是编码的逆——反复除以 3 取余数：</p>
+<div class="arithmatex">\[
+t_4 = \text{packed} \bmod 3, \quad \text{packed} \leftarrow \lfloor \text{packed} / 3 \rfloor
+\]</div>
+<p>重复 5 次取出 <span class="arithmatex">\(t_4, t_3, t_2, t_1, t_0\)</span>（逆序）。</p>
+<div class="highlight"><pre><span></span><code><span class="n">t4</span> <span class="o">=</span> <span class="n">p</span> <span class="o">%</span> <span class="mi">3</span><span class="p">;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">t3</span> <span class="o">=</span> <span class="n">p</span> <span class="o">%</span> <span class="mi">3</span><span class="p">;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">p</span> <span class="o">%</span> <span class="mi">3</span><span class="p">;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="n">p</span> <span class="o">%</span> <span class="mi">3</span><span class="p">;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="n">t0</span> <span class="o">=</span> <span class="n">p</span>
+</code></pre></div>
+<p><strong>5 次整数除法 + 5 次取模</strong>——这是 PTQ1_0 的解码代价。在 SIMD 上除法/取模比位运算慢 3-10x。</p>
+<h3 id="24">2.4 密度<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\text{bpw}_{\text{PTQ1\_0}} = \frac{8}{5} + 0.125 = 1.6 + 0.125 = \mathbf{1.725 \text{ bpw}}
+\]</div>
+<p>vs 信息论下界 1.585 bpw——只多 0.115 bpw（7.3% 开销），几乎最优。</p>
+<h2 id="3-pq2_02-bit-slot-packing">3. PQ2_0：2-bit slot packing<a class="headerlink" href="#3-pq2_02-bit-slot-packing" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 设计哲学：对齐换速度<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>PQ2_0 不追求信息论效率，而是<strong>对齐到 2 bit</strong>，让解码只用位运算（shift + mask）。</p>
+<p>每个 trit <span class="arithmatex">\(\{-1, 0, +1\}\)</span> 映射到 <span class="arithmatex">\(\{0, 1, 2\}\)</span>，存进 2 bit slot。slot 3（即 <code>0b11</code>）unused——浪费 25% 的 slot 空间，但换来了对齐友好。</p>
+<h3 id="32-4-trit-8-bit">3.2 编码：4 trit → 8 bit<a class="headerlink" href="#32-4-trit-8-bit" title="Permanent link">&para;</a></h3>
+<p>4 个 trit 各占 2 bit，拼进 1 byte：</p>
+<div class="arithmatex">\[
+\text{packed} = t_0 \,|\, (t_1 \ll 2) \,|\, (t_2 \ll 4) \,|\, (t_3 \ll 6)
+\]</div>
+<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">trits</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>  <span class="c1"># {0,1,2}</span>
+<span class="n">packed</span> <span class="o">=</span> <span class="n">t</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">|</span> <span class="p">(</span><span class="n">t</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">t</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">t</span><span class="p">[:,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="33-shift-mask">3.3 解码：shift + mask<a class="headerlink" href="#33-shift-mask" title="Permanent link">&para;</a></h3>
+<p>每个 trit 用 mask <code>0x3</code> 取出，只需 shift + AND：</p>
+<div class="arithmatex">\[
+t_0 = \text{packed} \,\&amp;\, \texttt{0x3}, \quad
+t_1 = (\text{packed} \gg 2) \,\&amp;\, \texttt{0x3}, \quad \ldots
+\]</div>
+<div class="highlight"><pre><span></span><code><span class="n">t0</span> <span class="o">=</span> <span class="n">p</span> <span class="o">&amp;</span> <span class="mh">0x3</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x3</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;&gt;</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x3</span>
+<span class="n">t3</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span> <span class="o">&gt;&gt;</span> <span class="mi">6</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0x3</span>
+</code></pre></div>
+<p><strong>4 次 shift + 4 次 AND</strong>——纯位运算，无除法。在所有硬件上都是单周期。</p>
+<h3 id="34">3.4 密度<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\text{bpw}_{\text{PQ2\_0}} = 2 + 0.125 = \mathbf{2.125 \text{ bpw}}
+\]</div>
+<p>vs PTQ1_0 的 1.725 bpw——多 0.4 bpw（23% 开销）。在 27B 模型上：</p>
+<div class="arithmatex">\[
+\Delta\text{size} = 27 \times 10^9 \times \frac{0.4}{8} \approx 1.35 \text{ GB}
+\]</div>
+<p>PQ2_0 比 PTQ1_0 多占 ~1.35 GB。</p>
+<h2 id="4">4. 密度对比与信息论视角<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 三种格式的完整对比<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>格式</th>
-<th>bpw</th>
-<th>解包方式</th>
+<th>数据 bpw</th>
+<th>+ scale</th>
+<th>总 bpw</th>
+<th>利用率</th>
+<th>解码</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1-bit (binary)</td>
-<td>1.125</td>
+<td>1.0</td>
+<td>0.125</td>
+<td><strong>1.125</strong></td>
+<td>N/A</td>
 <td>XNOR（最快）</td>
 </tr>
 <tr>
 <td><strong>PTQ1_0</strong></td>
+<td>1.6</td>
+<td>0.125</td>
 <td><strong>1.725</strong></td>
+<td>99.1%</td>
 <td>除法 + 取模（最紧）</td>
 </tr>
 <tr>
 <td><strong>PQ2_0</strong></td>
+<td>2.0</td>
+<td>0.125</td>
 <td><strong>2.125</strong></td>
+<td>79.2%</td>
 <td>shift + mask（最简）</td>
+</tr>
+<tr>
+<td>理论下界</td>
+<td>1.585</td>
+<td>0.125</td>
+<td><strong>1.710</strong></td>
+<td>100%</td>
+<td>不可能</td>
 </tr>
 </tbody>
 </table>
-<p>PTQ1_0 比 PQ2_0 省 0.4 bpw——在 27B 模型上差 ~2 GB。</p>
-<h2 id="_3">架构敏感性<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>为什么不同硬件上最优格式不同？</p>
-<h3 id="ada-l4ptq1_0">Ada / L4：PTQ1_0 更快<a class="headerlink" href="#ada-l4ptq1_0" title="Permanent link">&para;</a></h3>
-<p>这些架构的 trit kernel 优化得好。除法可以用查表 + 乘法近似，
-密集的 packing 让 memory bandwidth 利用率高。</p>
-<h3 id="h100-blackwellpq2_0">H100 / Blackwell：PQ2_0 更快<a class="headerlink" href="#h100-blackwellpq2_0" title="Permanent link">&para;</a></h3>
-<p>这些架构的 2-bit slot 对齐更好。H100 的 Tensor Core 对 2-bit 边界友好，
-shift + mask 的解码延迟比除法低，弥补了体积大的劣势。</p>
-<h3 id="apple-silicon1-bit-xnor">Apple Silicon：1-bit XNOR 优势小<a class="headerlink" href="#apple-silicon1-bit-xnor" title="Permanent link">&para;</a></h3>
-<p>ARM NEON 的 SIMD 宽度（128 bit）不如 x86 AVX2（256 bit），
-位运算的硬件优势被抵消。</p>
+<h3 id="42">4.2 信息论效率<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[
+\eta_{\text{PTQ1\_0}} = \frac{1.585}{1.6} = 99.1\%, \quad
+\eta_{\text{PQ2\_0}} = \frac{1.585}{2.0} = 79.2\%
+\]</div>
+<p>PTQ1_0 几乎无损地逼近下界，PQ2_0 浪费了 20.8% 的空间。</p>
 <div class="admonition insight">
-<p class="admonition-title">见解：没有 universally 最优的 packing</p>
-<p>这说明"最优"是 <strong>workload × 硬件</strong> 的函数，不是绝对的。
-Bonsai 提供两种格式，让用户按硬件选——这本身就是一个设计决策：
-不押注单一架构，而是适配生态。</p>
+<p class="admonition-title">见解：为什么 PTQ1_0 不用 6 trit → 10 bit？</p>
+<p><span class="arithmatex">\(3^6 = 729 &gt; 2^{10} = 1024\)</span>，6 trit 进 10 bit 的利用率是 <span class="arithmatex">\(\frac{6 \times 1.585}{10} = 95.1\%\)</span>，
+<strong>反而比 5→8 的 99.1% 低</strong>。5→8 是 <span class="arithmatex">\(3^n \le 2^8\)</span> 的最优解。
+更大的块（如 11 trit → 18 bit，<span class="arithmatex">\(\eta = 96.8\%\)</span>）利用率都不如 5→8。
+这是数论的一个非平凡事实：<span class="arithmatex">\((n, k) = (5, 8)\)</span> 是 <span class="arithmatex">\(\frac{n \log_2 3}{k}\)</span> 的一个特别好近似。</p>
 </div>
-<h2 id="_4">代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai</span><span class="w"> </span><span class="kn">import</span> <span class="n">pack_trits_ptq10</span><span class="p">,</span> <span class="n">unpack_trits_ptq10</span><span class="p">,</span> <span class="n">pack_trits_pq20</span><span class="p">,</span> <span class="n">unpack_trits_pq20</span>
+<h2 id="5">5. 架构敏感性：为什么最优格式取决于硬件<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>两种格式的解码代价不同，在不同硬件上的相对速度也不同。<strong>这不是实现差异，是架构差异</strong>。</p>
+<h3 id="51-ada-l4ptq1_0">5.1 Ada / L4：PTQ1_0 更快<a class="headerlink" href="#51-ada-l4ptq1_0" title="Permanent link">&para;</a></h3>
+<p>这些架构的 trit kernel 优化得好，除法可以用<strong>查表 + 乘法近似</strong>：</p>
+<div class="arithmatex">\[
+p \div 3 \approx p \times \text{magic} \gg \text{shift}
+\]</div>
+<p>密集的 packing（1.6 bpw）让 <strong>memory bandwidth 利用率高</strong>——同样大小的 L2 cache 能装更多权重，减少 HBM 访问。在 memory-bound 场景（batch-1 推理），这是决定性优势。</p>
+<h3 id="52-h100-blackwellpq2_0">5.2 H100 / Blackwell：PQ2_0 更快<a class="headerlink" href="#52-h100-blackwellpq2_0" title="Permanent link">&para;</a></h3>
+<p>这些架构的 <strong>2-bit slot 对齐更好</strong>。H100 的 Tensor Core 对 2-bit 边界友好，可以高效地做 2-bit gather。</p>
+<p>shift + mask 的解码延迟比除法低 3-5x，<strong>弥补了体积大的劣势</strong>。在 compute-bound 场景（大 batch），解码速度比密度更重要。</p>
+<h3 id="53-apple-silicon1-bit-xnor">5.3 Apple Silicon：1-bit XNOR 优势小<a class="headerlink" href="#53-apple-silicon1-bit-xnor" title="Permanent link">&para;</a></h3>
+<p>ARM NEON 的 SIMD 宽度是 128 bit，不如 x86 AVX2 的 256 bit 或 AVX-512 的 512 bit。</p>
+<div class="arithmatex">\[
+\text{throughput}_{\text{XNOR}} \propto \text{SIMD width}
+\]</div>
+<p>位运算的硬件优势被较窄的 SIMD 抵消。在 M5 Max 上，1-bit 模型甚至<strong>比 FP16 更慢</strong>——这不是"还没优化"，是架构层面的根本性差异。</p>
+<div class="admonition insight">
+<p class="admonition-title">见解：Bonsai 提供两种格式的设计决策</p>
+<p>Bonsai 不押注单一架构，而是<strong>同时提供 PTQ1_0 和 PQ2_0</strong>，让用户按硬件选。
+这本身就是一个设计哲学：<strong>适配生态，而不是赌生态</strong>。
+在 GPU 快速迭代、NPU/TPU 异构化的当下，押注单一 packing 格式是高风险的——
+今天的最优格式可能明天就不再是。提供两种格式是"用工程复杂度换架构鲁棒性"。</p>
+</div>
+<h2 id="6">6. 实现细节<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h3 id="61-ptq1_0-packunpack">6.1 PTQ1_0 pack/unpack<a class="headerlink" href="#61-ptq1_0-packunpack" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai</span><span class="w"> </span><span class="kn">import</span> <span class="n">pack_trits_ptq10</span><span class="p">,</span> <span class="n">unpack_trits_ptq10</span>
 
 <span class="n">trits</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="mi">40</span><span class="p">,))</span>  <span class="c1"># {−1, 0, +1}</span>
 
-<span class="c1"># PTQ1_0: 5 trit → 8 bit</span>
-<span class="n">packed</span> <span class="o">=</span> <span class="n">pack_trits_ptq10</span><span class="p">(</span><span class="n">trits</span><span class="p">)</span>      <span class="c1"># uint8, 8 bytes</span>
-<span class="n">unpacked</span> <span class="o">=</span> <span class="n">unpack_trits_ptq10</span><span class="p">(</span><span class="n">packed</span><span class="p">)</span>  <span class="c1"># 还原</span>
-<span class="k">assert</span> <span class="p">(</span><span class="n">trits</span> <span class="o">==</span> <span class="n">unpacked</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-
-<span class="c1"># PQ2_0: 4 trit → 8 bit</span>
-<span class="n">packed</span> <span class="o">=</span> <span class="n">pack_trits_pq20</span><span class="p">(</span><span class="n">trits</span><span class="p">)</span>       <span class="c1"># uint8, 10 bytes</span>
-<span class="n">unpacked</span> <span class="o">=</span> <span class="n">unpack_trits_pq20</span><span class="p">(</span><span class="n">packed</span><span class="p">)</span>
-<span class="k">assert</span> <span class="p">(</span><span class="n">trits</span> <span class="o">==</span> <span class="n">unpacked</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="n">packed</span> <span class="o">=</span> <span class="n">pack_trits_ptq10</span><span class="p">(</span><span class="n">trits</span><span class="p">)</span>       <span class="c1"># uint8, 8 bytes（40/5）</span>
+<span class="n">unpacked</span> <span class="o">=</span> <span class="n">unpack_trits_ptq10</span><span class="p">(</span><span class="n">packed</span><span class="p">)</span>  <span class="c1"># int8, 40 个</span>
+<span class="k">assert</span> <span class="p">(</span><span class="n">trits</span> <span class="o">==</span> <span class="n">unpacked</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>       <span class="c1"># 精确还原</span>
 </code></pre></div>
-<h2 id="group-scale">group scale<a class="headerlink" href="#group-scale" title="Permanent link">&para;</a></h2>
-<p>两种格式都配 group scale：1 FP16 (16 bit) per 128 weights = 0.125 bpw。</p>
-<p>scale 是 FP16，在 matmul 时乘到结果上：</p>
-<div class="arithmatex">\[y = \text{ternary\_matmul}(x, \text{trit}) \cdot \text{scale}\]</div>
-<h2 id="_5">实验验证<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p><strong>约束</strong>：trit 数量必须是 5 的倍数（PTQ1_0 的块大小）。</p>
+<h3 id="62-pq2_0-packunpack">6.2 PQ2_0 pack/unpack<a class="headerlink" href="#62-pq2_0-packunpack" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai</span><span class="w"> </span><span class="kn">import</span> <span class="n">pack_trits_pq20</span><span class="p">,</span> <span class="n">unpack_trits_pq20</span>
+
+<span class="n">packed</span> <span class="o">=</span> <span class="n">pack_trits_pq20</span><span class="p">(</span><span class="n">trits</span><span class="p">)</span>        <span class="c1"># uint8, 10 bytes（40/4）</span>
+<span class="n">unpacked</span> <span class="o">=</span> <span class="n">unpack_trits_pq20</span><span class="p">(</span><span class="n">packed</span><span class="p">)</span>   <span class="c1"># int8, 40 个</span>
+<span class="k">assert</span> <span class="p">(</span><span class="n">trits</span> <span class="o">==</span> <span class="n">unpacked</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>       <span class="c1"># 精确还原</span>
+</code></pre></div>
+<p><strong>约束</strong>：trit 数量必须是 4 的倍数（PQ2_0 的块大小）。</p>
+<h3 id="63">6.3 密度计算<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">bonsai</span><span class="w"> </span><span class="kn">import</span> <span class="n">packing_bpw</span>
+
+<span class="n">packing_bpw</span><span class="p">()</span>
+<span class="c1"># {</span>
+<span class="c1">#     &quot;1-bit (binary)&quot;: 1.125,</span>
+<span class="c1">#     &quot;PTQ1_0 (dense trit)&quot;: 1.725,</span>
+<span class="c1">#     &quot;PQ2_0 (2-bit slot)&quot;: 2.125,</span>
+<span class="c1"># }</span>
+</code></pre></div>
+<h3 id="64-group-scale-matmul">6.4 group scale 在 matmul 中的作用<a class="headerlink" href="#64-group-scale-matmul" title="Permanent link">&para;</a></h3>
+<p>两种格式都配 group scale。scale 是 FP16，在 matmul 时乘到结果上：</p>
+<div class="arithmatex">\[
+y = \text{ternary\_matmul}(x, \text{trit}) \cdot \alpha_g
+\]</div>
+<p>其中 <span class="arithmatex">\(\alpha_g\)</span> 是第 <span class="arithmatex">\(g\)</span> 组的 scale（每 128 个权重共享一个）。这让三值化能表达权重的<strong>幅度信息</strong>——trit 只存符号，scale 存幅度。</p>
+<h2 id="7">7. 实验验证<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
 <p><code>experiments/06_xnor_popcount_packing.py</code> Part 3 + Part 5：</p>
+<h3 id="71">7.1 密度验证<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<p>实验计算三种格式的 bpw，与理论值对比：</p>
+<div class="highlight"><pre><span></span><code>1-bit (binary):  1.125 bpw  ✓
+PTQ1_0 (trit):   1.725 bpw  ✓
+PQ2_0 (slot):    2.125 bpw  ✓
+</code></pre></div>
+<h3 id="72-roundtrip">7.2 Roundtrip 精度<a class="headerlink" href="#72-roundtrip" title="Permanent link">&para;</a></h3>
+<p>两种 packing 都做 pack → unpack roundtrip：</p>
+<div class="highlight"><pre><span></span><code>PTQ1_0 roundtrip 误差 = 0  ✓（精确还原）
+PQ2_0  roundtrip 误差 = 0  ✓（精确还原）
+</code></pre></div>
+<p><strong>两种格式都是无损的</strong>——pack/unpack 不引入任何误差。误差只来自三值化本身（<span class="arithmatex">\(\{-1, 0, +1\}\)</span> 近似 FP16 权重），不来自 packing。</p>
+<div class="admonition insight">
+<p class="admonition-title">见解：packing 是无损的，三值化才是有损的</p>
+<p>这一点容易被忽略：packing 格式不影响模型精度，只影响<strong>存储密度和解码速度</strong>。
+模型精度完全由三值化 <span class="arithmatex">\(\{-1, 0, +1\}\)</span> + group scale 决定。
+所以选 PTQ1_0 还是 PQ2_0 是<strong>纯工程决策</strong>（速度 vs 空间），不是精度决策。</p>
+</div>
+<h2 id="8">8. 进一步阅读<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
 <ul>
-<li>密度计算：1.125 / 1.725 / 2.125 bpw</li>
-<li>packing roundtrip：误差 = 0（两种格式都精确还原）</li>
+<li><strong><a href="../xnor-popcount/">XNOR-popcount kernel</a></strong>：1-bit matmul 的位运算等价——packing 的下游消费者</li>
+<li><strong><a href="../ternary/">Ternary quantization</a></strong>：三值化的赋值规则和 QAT 训练——packing 的上游生产者</li>
+<li><strong><a href="../../philosophy/intelligence-density/">Intelligence Density</a></strong>：为什么 0.4 bpw 的差距在端侧很重要</li>
+<li><strong><code>bonsai/kernel.py</code></strong>：完整实现</li>
 </ul>
-<hr />
-<p>详见 <code>bonsai/kernel.py</code>。</p>
 
 
 

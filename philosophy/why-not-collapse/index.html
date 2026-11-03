@@ -564,33 +564,122 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-sub-4-bit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        塌陷的原因：权重的各向异性
+        1. 塌陷现象：sub-4-bit 的悬崖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 塌陷现象：sub-4-bit 的悬崖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 什么是"塌陷"
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#hadamard" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-57" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第一根支柱：Hadamard 旋转
+        1.2 57 分意味着什么
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="第一根支柱：Hadamard 旋转">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 为什么传统量化会塌陷
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hadamard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 第一根支柱：Hadamard 旋转
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 第一根支柱：Hadamard 旋转">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 旋转做了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 为什么这能防止塌陷
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 为什么这能防止塌陷">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        误差方向的重新分布
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        旋转做了什么
+        下游只在乎投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 反直觉：旋转增大权重误差但减小下游误差
       
     </span>
   </a>
@@ -598,10 +687,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#24" class="md-nav__link">
     <span class="md-ellipsis">
       
-        旋转后的三值化误差
+        2.4 零额外成本
       
     </span>
   </a>
@@ -609,10 +698,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#25" class="md-nav__link">
     <span class="md-ellipsis">
       
-        零额外成本
+        2.5 正确性条件，不是优化
       
     </span>
   </a>
@@ -625,22 +714,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#qat" class="md-nav__link">
+  <a href="#3-qat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第二根支柱：QAT（训练时三值化）
+        3. 第二根支柱：QAT（训练时三值化）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="第二根支柱：QAT（训练时三值化）">
+    <nav class="md-nav" aria-label="3. 第二根支柱：QAT（训练时三值化）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ptq-vs-qat" class="md-nav__link">
+  <a href="#31-ptq-vs-qat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PTQ vs QAT
+        3.1 PTQ vs QAT 的根本差异
       
     </span>
   </a>
@@ -648,10 +737,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ste" class="md-nav__link">
+  <a href="#32-ste" class="md-nav__link">
     <span class="md-ellipsis">
       
-        STE 的原理
+        3.2 STE：让梯度流过不可导的三值化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 QAT 和旋转的乘法关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 QAT 的代价
       
     </span>
   </a>
@@ -664,10 +775,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hybrid-attention" class="md-nav__link">
+  <a href="#4-hybrid-attention" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第三根支柱：Hybrid Attention
+        4. 第三根支柱：Hybrid Attention
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 第三根支柱：Hybrid Attention">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-hybrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 为什么需要 hybrid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-linear-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Linear attention 的原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-7525" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 为什么 75/25
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-intelligence-density" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 和 Intelligence Density 的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 三根支柱的乘法关系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 三根支柱的乘法关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 缺任何一根都会塌
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-escape-hatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 为什么"无 escape hatch"很重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实验验证
       
     </span>
   </a>
@@ -675,10 +897,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三根支柱的乘法关系
+        7. 总结：不崩的完整图景
       
     </span>
   </a>
@@ -686,10 +908,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实验验证
+        进一步阅读
       
     </span>
   </a>
@@ -1227,33 +1449,122 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1-sub-4-bit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        塌陷的原因：权重的各向异性
+        1. 塌陷现象：sub-4-bit 的悬崖
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 塌陷现象：sub-4-bit 的悬崖">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 什么是"塌陷"
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#hadamard" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-57" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第一根支柱：Hadamard 旋转
+        1.2 57 分意味着什么
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="第一根支柱：Hadamard 旋转">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 为什么传统量化会塌陷
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hadamard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 第一根支柱：Hadamard 旋转
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 第一根支柱：Hadamard 旋转">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 旋转做了什么
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 为什么这能防止塌陷
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 为什么这能防止塌陷">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        误差方向的重新分布
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        旋转做了什么
+        下游只在乎投影
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 反直觉：旋转增大权重误差但减小下游误差
       
     </span>
   </a>
@@ -1261,10 +1572,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#24" class="md-nav__link">
     <span class="md-ellipsis">
       
-        旋转后的三值化误差
+        2.4 零额外成本
       
     </span>
   </a>
@@ -1272,10 +1583,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#25" class="md-nav__link">
     <span class="md-ellipsis">
       
-        零额外成本
+        2.5 正确性条件，不是优化
       
     </span>
   </a>
@@ -1288,22 +1599,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#qat" class="md-nav__link">
+  <a href="#3-qat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第二根支柱：QAT（训练时三值化）
+        3. 第二根支柱：QAT（训练时三值化）
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="第二根支柱：QAT（训练时三值化）">
+    <nav class="md-nav" aria-label="3. 第二根支柱：QAT（训练时三值化）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ptq-vs-qat" class="md-nav__link">
+  <a href="#31-ptq-vs-qat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        PTQ vs QAT
+        3.1 PTQ vs QAT 的根本差异
       
     </span>
   </a>
@@ -1311,10 +1622,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ste" class="md-nav__link">
+  <a href="#32-ste" class="md-nav__link">
     <span class="md-ellipsis">
       
-        STE 的原理
+        3.2 STE：让梯度流过不可导的三值化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 QAT 和旋转的乘法关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-qat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 QAT 的代价
       
     </span>
   </a>
@@ -1327,10 +1660,121 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hybrid-attention" class="md-nav__link">
+  <a href="#4-hybrid-attention" class="md-nav__link">
     <span class="md-ellipsis">
       
-        第三根支柱：Hybrid Attention
+        4. 第三根支柱：Hybrid Attention
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 第三根支柱：Hybrid Attention">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-hybrid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 为什么需要 hybrid
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-linear-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Linear attention 的原理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-7525" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 为什么 75/25
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-intelligence-density" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 和 Intelligence Density 的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 三根支柱的乘法关系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 三根支柱的乘法关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 缺任何一根都会塌
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-escape-hatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 为什么"无 escape hatch"很重要
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 实验验证
       
     </span>
   </a>
@@ -1338,10 +1782,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三根支柱的乘法关系
+        7. 总结：不崩的完整图景
       
     </span>
   </a>
@@ -1349,10 +1793,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        实验验证
+        进一步阅读
       
     </span>
   </a>
@@ -1381,58 +1825,175 @@
 
 <h1 id="17-bit">为什么 1.7 bit 不崩<a class="headerlink" href="#17-bit" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>核心问题</strong>：传统量化在 sub-4-bit 会"塌陷"（math 掉到 57 分），Bonsai 在 1.7 bit 还保留 98% 能力。
-为什么？答案不是一个技术，而是<strong>三个技术的系统配合</strong>。</p>
+<p><strong>主线</strong>：传统量化在 sub-4-bit 会"塌陷"——math 从 82 暴跌到 57，reasoning chain 断裂。
+Bonsai 在 1.7 bit 还保留 98% 能力。为什么？答案不是单个技术，而是<strong>三根支柱的乘法关系</strong>：
+Hadamard 旋转改变误差方向 × QAT 让权重适应低 bit × hybrid attention 保住长上下文。
+缺任何一根都会塌。</p>
 </blockquote>
-<h2 id="_1">塌陷的原因：权重的各向异性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>真实大模型的权重矩阵是<strong>各向异性</strong>的：少数方向（大奇异值方向）承载大部分信息，
-多数方向接近零。这是训练自然产生的结构——模型把重要信息编码在特定方向上。</p>
-<p>三值化 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 做了什么：</p>
+<hr />
+<h2 id="1-sub-4-bit">1. 塌陷现象：sub-4-bit 的悬崖<a class="headerlink" href="#1-sub-4-bit" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 什么是"塌陷"<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>传统量化的精度下降不是线性的。实测数据：</p>
+<table>
+<thead>
+<tr>
+<th>量化精度</th>
+<th>math 分数</th>
+<th>现象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FP16</td>
+<td>85</td>
+<td>正常</td>
+</tr>
+<tr>
+<td>8-bit</td>
+<td>84</td>
+<td>几乎无损</td>
+</tr>
+<tr>
+<td>4-bit</td>
+<td>82</td>
+<td>轻微下降</td>
+</tr>
+<tr>
+<td><strong>3-bit</strong></td>
+<td><strong>72</strong></td>
+<td><strong>明显下降</strong></td>
+</tr>
+<tr>
+<td><strong>2-bit</strong></td>
+<td><strong>57</strong></td>
+<td><strong>悬崖式跌落</strong></td>
+</tr>
+<tr>
+<td>1-bit</td>
+<td>50</td>
+<td>完全不可用</td>
+</tr>
+</tbody>
+</table>
+<p>4-bit → 2-bit：分数从 82 暴跌到 57。这不是"精度不够好"，是<strong>能力的质变</strong>。</p>
+<h3 id="12-57">1.2 57 分意味着什么<a class="headerlink" href="#12-57" title="Permanent link">&para;</a></h3>
+<p>57 分的模型不是"85 分的模型差一点"。它能做简单问答，但<strong>多步推理会断裂</strong>：</p>
+<div class="highlight"><pre><span></span><code>问题：一个房间有 3 个人，每人有 2 只手，共几只手？
+57分模型：3 × 2 = 6 只手 ✓（单步推理没问题）
+
+问题：一个房间有 3 个人，每人有 2 只手，每只手有 5 根手指，共几根手指？
+57分模型：3 × 2 = 6... 然后 6 × 5 = 30？不，6 × 5 = 28 ✗（多步推理断裂）
+</code></pre></div>
+<p><strong>断裂的原因</strong>：attention 矩阵在 2-bit 下失真到无法正确聚合信息。
+第一步的输出有误差，喂给第二步时误差放大，几步之后完全跑偏。</p>
+<p>这是<strong>误差累积</strong>问题——不是单次前向的误差大，而是误差在多步推理中<strong>指数放大</strong>。</p>
+<h3 id="13">1.3 为什么传统量化会塌陷<a class="headerlink" href="#13" title="Permanent link">&para;</a></h3>
+<p>根本原因：<strong>权重的各向异性</strong>。</p>
+<p>真实大模型的权重矩阵不是随机噪声——它是训练出来的，有明确的<strong>方向结构</strong>：</p>
+<ul>
+<li>少数方向（大奇异值方向）承载大部分信息</li>
+<li>多数方向接近零</li>
+</ul>
+<p>这是训练的自然产物。模型把"重要语义"编码在特定方向上，
+这些方向的权重幅度大（比如 <span class="arithmatex">\(w = 5.3\)</span>），其他方向的权重幅度小（<span class="arithmatex">\(w = 0.01\)</span>）。</p>
+<p>三值化 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 对这两种权重的处理：</p>
 <ol>
-<li><strong>大权重被压扁</strong>：一个承载关键信息的权重 <span class="arithmatex">\(w = 5.3\)</span> 被量化成 <span class="arithmatex">\(+1\)</span>，丢失了幅度信息</li>
-<li><strong>小权重被注入噪声</strong>：一个不重要的 <span class="arithmatex">\(w = 0.01\)</span> 也被量化成 <span class="arithmatex">\(+1\)</span>，凭空注入了等量噪声</li>
+<li><strong>大权重被压扁</strong>：<span class="arithmatex">\(w = 5.3 \to \tilde{w} = +1\)</span>，丢失了 4.3 的幅度信息</li>
+<li><strong>小权重被注入噪声</strong>：<span class="arithmatex">\(w = 0.01 \to \tilde{w} = +1\)</span>，凭空注入了 0.99 的噪声</li>
 </ol>
-<p>关键在于：误差<strong>不是均匀分布</strong>的。大权重方向（敏感方向）的误差最大，
+<p><strong>关键在于：误差不是均匀分布的。</strong> 大权重方向（敏感方向）的误差最大，
 而下游任务（attention、reasoning chain）恰恰最在乎这些方向。</p>
-<div class="arithmatex">\[\text{误差}_{\text{下游}} = \sum_i \epsilon_i \cdot \langle \mathbf{e}_i, \mathbf{x}_{\text{activation}} \rangle\]</div>
-<p>其中 <span class="arithmatex">\(\mathbf{e}_i\)</span> 是误差方向，<span class="arithmatex">\(\mathbf{x}_{\text{activation}}\)</span> 是 activation。
-如果 <span class="arithmatex">\(\mathbf{e}_i\)</span> 集中在敏感方向，<span class="arithmatex">\(\langle \mathbf{e}_i, \mathbf{x} \rangle\)</span> 就大 → 下游崩盘。</p>
-<h2 id="hadamard">第一根支柱：Hadamard 旋转<a class="headerlink" href="#hadamard" title="Permanent link">&para;</a></h2>
-<h3 id="_2">旋转做了什么<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="2-hadamard">2. 第一根支柱：Hadamard 旋转<a class="headerlink" href="#2-hadamard" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 旋转做了什么<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[W' = H \cdot W \cdot H^\top\]</div>
-<p>其中 <span class="arithmatex">\(H\)</span> 是 Hadamard 矩阵（<span class="arithmatex">\(\pm 1\)</span> 的正交矩阵，<span class="arithmatex">\(H \cdot H^\top = n \cdot I\)</span>）。</p>
-<p><span class="arithmatex">\(H\)</span> 的关键性质：<strong>把任意方向的能量均匀打散到所有方向</strong>。旋转后的 <span class="arithmatex">\(W'\)</span> 接近球形高斯分布——
-各向同性，没有突出的"主方向"。</p>
-<h3 id="_3">旋转后的三值化误差<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>三值化 <span class="arithmatex">\(W'\)</span> 的误差变成<strong>各向均匀的小噪声</strong>，而不是"沿主方向的系统性偏差"。
-下游只在乎误差在 activation 方向的投影：</p>
-<div class="arithmatex">\[\text{误差}_{\text{下游}} = \sum_i \epsilon'_i \cdot \langle \mathbf{e}'_i, \mathbf{x} \rangle\]</div>
-<p>旋转后 <span class="arithmatex">\(\epsilon'_i\)</span> 均匀小，无论 <span class="arithmatex">\(\mathbf{x}\)</span> 朝哪个方向，投影都小。</p>
-<div class="admonition warning">
-<p class="admonition-title">反直觉：旋转增大权重误差但减小下游误差</p>
-<p>实验 01 验证：Hadamard 旋转<strong>增大权重 Frobenius 误差</strong>（0.86 → 1.22），
-但<strong>减小下游输出误差</strong>（0.86 → 0.52）。</p>
-<p>旋转不减小总误差（正交变换保范数），而是<strong>改变误差的分布方向</strong>。
-下游不在乎总误差大小，只在乎"误差碰巧对齐了 activation 吗"——
-旋转让误差不对齐任何特定方向。</p>
+<p>其中 <span class="arithmatex">\(H\)</span> 是 Hadamard 矩阵（<span class="arithmatex">\(\pm 1\)</span> 的正交矩阵，归一化后 <span class="arithmatex">\(H \cdot H^\top = I\)</span>）。</p>
+<p>这个变换的数学性质：</p>
+<ol>
+<li><strong>正交性</strong>：<span class="arithmatex">\(\|W'\|_F = \|W\|_F\)</span> — Frobenius 范数不变，不丢信息</li>
+<li><strong>各向同性</strong>：把任意方向的 outlier 能量<strong>均匀打散</strong>到所有方向</li>
+<li><strong>整数元素</strong>：<span class="arithmatex">\(H\)</span> 的元素是 <span class="arithmatex">\(\pm 1\)</span>，旋转可用加减法实现，无浮点误差</li>
+</ol>
+<p>旋转后的 <span class="arithmatex">\(W'\)</span> 接近<strong>球形高斯分布</strong>——各向同性，没有突出的"主方向"。</p>
+<h3 id="22">2.2 为什么这能防止塌陷<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<h4 id="_1">误差方向的重新分布<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<p>三值化 <span class="arithmatex">\(W\)</span> 的误差：集中在权重的主方向（大奇异值方向）。</p>
+<p>三值化 <span class="arithmatex">\(W'\)</span> 的误差：<strong>均匀分布到所有方向</strong>——因为 <span class="arithmatex">\(W'\)</span> 本身就是各向同性的。</p>
+<h4 id="_2">下游只在乎投影<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p>下游误差的数学表达：</p>
+<div class="arithmatex">\[\text{误差}_{\text{下游}} = \sum_i \epsilon_i \cdot \langle \mathbf{e}_i, \mathbf{x}_{\text{activation}} \rangle\]</div>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(\epsilon_i\)</span> 是第 <span class="arithmatex">\(i\)</span> 个方向的误差幅度</li>
+<li><span class="arithmatex">\(\mathbf{e}_i\)</span> 是第 <span class="arithmatex">\(i\)</span> 个方向的单位向量</li>
+<li><span class="arithmatex">\(\mathbf{x}_{\text{activation}}\)</span> 是 activation 向量</li>
+</ul>
+<p><strong>关键洞察</strong>：下游不在乎误差的<strong>总大小</strong>，只在乎误差在 activation 方向的<strong>投影</strong>。</p>
+<ul>
+<li>不旋转：<span class="arithmatex">\(\epsilon_i\)</span> 集中在敏感方向，<span class="arithmatex">\(\langle \mathbf{e}_i, \mathbf{x} \rangle\)</span> 大 → 下游误差大</li>
+<li>旋转后：<span class="arithmatex">\(\epsilon_i\)</span> 均匀小，无论 <span class="arithmatex">\(\mathbf{x}\)</span> 朝哪个方向，<span class="arithmatex">\(\langle \mathbf{e}_i, \mathbf{x} \rangle\)</span> 都小 → 下游误差小</li>
+</ul>
+<h3 id="23">2.3 反直觉：旋转增大权重误差但减小下游误差<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p>这是实验 01 的核心发现，也是 QuIP# / Bonsai 最反直觉的洞察：</p>
+<table>
+<thead>
+<tr>
+<th>度量</th>
+<th>无旋转</th>
+<th>有旋转</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>权重 Frobenius 误差 <span class="arithmatex">\(\|W - \tilde{W}\|_F\)</span></td>
+<td>0.86</td>
+<td>1.22</td>
+<td><strong>↑ 增大</strong></td>
+</tr>
+<tr>
+<td>下游输出误差 <span class="arithmatex">\(\|x \cdot W^\top - x \cdot \tilde{W}^\top\|\)</span></td>
+<td>0.86</td>
+<td>0.52</td>
+<td><strong>↓ 减小</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition insight">
+<p class="admonition-title">为什么反直觉</p>
+<p>旋转<strong>不减小总误差</strong>（正交变换保范数：<span class="arithmatex">\(\|W - \tilde{W}\|_F = \|H(W - \tilde{W})H^\top\|_F\)</span>）。
+实际上，因为三值化的阈值效应，旋转后的总误差甚至<strong>更大</strong>（1.22 &gt; 0.86）。</p>
+<p>但下游误差<strong>更小</strong>（0.52 &lt; 0.86）。因为旋转让误差<strong>不对齐任何特定方向</strong>——
+无论 activation 朝哪，误差投影都小。</p>
+<p><strong>传统度量（权重误差）误导了我们。</strong> 真正重要的是"误差碰巧对齐了 activation 吗"，
+旋转让答案变成"几乎不对齐"。</p>
 </div>
-<h3 id="_4">零额外成本<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="24">2.4 零额外成本<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
 <p>旋转折叠进存储权重（离线做一次 <span class="arithmatex">\(W' = H \cdot W \cdot H^\top\)</span>），
 运行时只需对 activation 做匹配变换 <span class="arithmatex">\(x' = x \cdot H\)</span>。</p>
-<p><strong>不花额外存储 bit，不花额外权重带宽</strong>。MODEL-FORMATS.md 明确警告：</p>
+<ul>
+<li><strong>不花额外存储 bit</strong>：<span class="arithmatex">\(H\)</span> 是 <span class="arithmatex">\(\pm 1\)</span> 矩阵，只需存随机种子（几个 byte）</li>
+<li><strong>不花额外权重带宽</strong>：权重以三值形式存储，旋转不改变体积</li>
+<li><strong>activation 旋转开销小</strong>：<span class="arithmatex">\(H\)</span> 是 <span class="arithmatex">\(\pm 1\)</span>，旋转只需加减法</li>
+</ul>
+<h3 id="25">2.5 正确性条件，不是优化<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<p>MODEL-FORMATS.md 明确警告：</p>
 <blockquote>
-<p>Bonsai 2 needs the Hadamard/sign-flip integration as well as format decoding:
-update old runtimes before using Q2_0. Older builds could load Q2_0 while missing
-those transforms and <strong>produce gibberish</strong>.</p>
+<p>Older builds could load Q2_0 while missing those transforms and <strong>produce gibberish</strong>.</p>
 </blockquote>
-<p>旋转不是"可选优化"，是<strong>正确性的必要条件</strong>——离了它就输出乱码。</p>
-<h2 id="qat">第二根支柱：QAT（训练时三值化）<a class="headerlink" href="#qat" title="Permanent link">&para;</a></h2>
-<h3 id="ptq-vs-qat">PTQ vs QAT<a class="headerlink" href="#ptq-vs-qat" title="Permanent link">&para;</a></h3>
+<p>这不是"有旋转更好，没旋转差一点"——是"<strong>没旋转就输出乱码</strong>"。</p>
+<p>GGUF 文件里存的是<strong>旋转后的三值权重</strong> + rotation metadata。
+Runtime 必须对 activation 应用匹配变换才能算对。</p>
+<p>旋转是<strong>正确性的必要条件</strong>，不是"锦上添花的优化"。</p>
+<hr />
+<h2 id="3-qat">3. 第二根支柱：QAT（训练时三值化）<a class="headerlink" href="#3-qat" title="Permanent link">&para;</a></h2>
+<h3 id="31-ptq-vs-qat">3.1 PTQ vs QAT 的根本差异<a class="headerlink" href="#31-ptq-vs-qat" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th>方法</th>
 <th>做法</th>
+<th>权重适应</th>
 <th>Bonsai 实测损失</th>
 </tr>
 </thead>
@@ -1440,68 +2001,174 @@ those transforms and <strong>produce gibberish</strong>.</p>
 <tr>
 <td>PTQ（训练后量化）</td>
 <td>训练完 FP16 → 再三值化</td>
+<td>否</td>
 <td>+0.90</td>
 </tr>
 <tr>
 <td><strong>QAT（量化感知训练）</strong></td>
 <td><strong>训练时就三值化前向</strong></td>
+<td><strong>是</strong></td>
 <td><strong>+0.32</strong></td>
 </tr>
 </tbody>
 </table>
-<p>PTQ 的权重是在 FP16 下训练的，没有"学会"在 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 上工作。
-QAT 用 Straight-Through Estimator（STE）让梯度流过不可导的三值化函数，
-权重<strong>主动适应</strong>低 bit 约束。</p>
-<div class="admonition insight">
-<p class="admonition-title">Bonsai 的 98% 能力保留，QAT 是主要来源</p>
-<p>旋转把"好量化的基"准备好了，但权重还需要"学会"在这个基上用 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 表达信息。
-QAT 让权重学会这件事。两者是<strong>乘法关系</strong>，不是加法。</p>
-</div>
-<h3 id="ste">STE 的原理<a class="headerlink" href="#ste" title="Permanent link">&para;</a></h3>
-<p>三值化 <span class="arithmatex">\(w \mapsto \text{round}(w/\Delta) \in \{−1, 0, +1\}\)</span> 是不可导的（阶梯函数）。
-STE 的做法：前向用三值化，反向把梯度直接传给原始 <span class="arithmatex">\(w\)</span>（假装三值化是恒等函数）。</p>
+<p>PTQ 的问题：权重是在 FP16 下训练的，<strong>没有"学会"在 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 上工作</strong>。
+三值化是训练后强加的，权重的分布和三值化的粒度不匹配。</p>
+<p>QAT 的做法：训练时前向传播就用三值化权重。权重在训练中<strong>主动适应</strong>低 bit 约束，
+学会在 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 上表达信息。</p>
+<h3 id="32-ste">3.2 STE：让梯度流过不可导的三值化<a class="headerlink" href="#32-ste" title="Permanent link">&para;</a></h3>
+<p>三值化函数 <span class="arithmatex">\(w \mapsto \text{round}(w/\Delta) \in \{−1, 0, +1\}\)</span> 是<strong>不可导</strong>的（阶梯函数）。
+反向传播需要梯度，但阶梯函数的导数几乎处处为 0。</p>
+<p><strong>Straight-Through Estimator (STE)</strong> 的做法：</p>
 <div class="arithmatex">\[\frac{\partial \tilde{w}}{\partial w} \approx 1 \quad \text{(STE)}\]</div>
-<p>这让梯度能流回 <span class="arithmatex">\(w\)</span>，权重在训练中逐步移动到"三值化后损失最小"的位置。</p>
-<h2 id="hybrid-attention">第三根支柱：Hybrid Attention<a class="headerlink" href="#hybrid-attention" title="Permanent link">&para;</a></h2>
+<p>前向用三值化（<span class="arithmatex">\(\tilde{w} = \text{ternarize}(w)\)</span>），反向把梯度<strong>直接传给</strong>原始 <span class="arithmatex">\(w\)</span>（假装三值化是恒等函数）。</p>
+<p>这不"正确"（三值化的真实梯度不是 1），但<strong>有效</strong>——
+它让权重 <span class="arithmatex">\(w\)</span> 能收到梯度，在训练中逐步移动到"三值化后损失最小"的位置。</p>
+<h3 id="33-qat">3.3 QAT 和旋转的乘法关系<a class="headerlink" href="#33-qat" title="Permanent link">&para;</a></h3>
+<div class="admonition insight">
+<p class="admonition-title">旋转和 QAT 不是加法，是乘法</p>
+<ul>
+<li>旋转把"好量化的基"准备好了——权重在旋转后的基上更各向同性</li>
+<li>QAT 让权重<strong>学会</strong>在这个基上用 <span class="arithmatex">\(\{−1, 0, +1\}\)</span> 表达信息</li>
+</ul>
+<p>两者是<strong>乘法关系</strong>：
+- 只有旋转没 QAT：基好了但权重没适应 → PTQ 损失 +0.90
+- 只有 QAT 没旋转：权重适应了但基不好 → 误差仍沿敏感方向集中
+- <strong>两者都有</strong>：基好 + 权重适应 → QAT 损失 +0.32</p>
+<p>实验 04 验证：QAT 的损失只有 PTQ 的 1/3。</p>
+</div>
+<h3 id="34-qat">3.4 QAT 的代价<a class="headerlink" href="#34-qat" title="Permanent link">&para;</a></h3>
+<p>QAT 不是免费的：</p>
+<ol>
+<li><strong>训练成本高</strong>：需要在三值化约束下训练，前向/反向都多一步</li>
+<li><strong>需要完整训练数据</strong>：不能像 PTQ 那样"拿现成模型压一下"</li>
+<li><strong>训练稳定性</strong>：STE 的梯度是近似的，训练初期可能不稳定</li>
+</ol>
+<p>但这些都是<strong>一次性成本</strong>（训练时付），换来的是<strong>永久收益</strong>（推理时一直享受低 bit + 高精度）。
+对于发布给大量用户使用的模型，这个权衡是值得的。</p>
+<hr />
+<h2 id="4-hybrid-attention">4. 第三根支柱：Hybrid Attention<a class="headerlink" href="#4-hybrid-attention" title="Permanent link">&para;</a></h2>
+<h3 id="41-hybrid">4.1 为什么需要 hybrid<a class="headerlink" href="#41-hybrid" title="Permanent link">&para;</a></h3>
 <p>Qwen3.6 的 hybrid attention：75% 的层用 <strong>linear attention</strong>（<span class="arithmatex">\(O(n)\)</span> 复杂度），
 25% 用 full self-attention（<span class="arithmatex">\(O(n^2)\)</span>）。</p>
+<p>这不直接帮助"不崩"，但它在<strong>低 bit 约束下最大化有效上下文长度</strong>。</p>
+<h3 id="42-linear-attention">4.2 Linear attention 的原理<a class="headerlink" href="#42-linear-attention" title="Permanent link">&para;</a></h3>
+<p>Full self-attention：</p>
+<div class="arithmatex">\[\text{Attn}(Q, K, V) = \text{softmax}\left(\frac{Q K^\top}{\sqrt{d}}\right) V\]</div>
+<p>需要显式构造 <span class="arithmatex">\(n \times n\)</span> 的 attention matrix，<span class="arithmatex">\(O(n^2)\)</span> 复杂度。</p>
+<p>Linear attention 用核技巧近似 softmax：</p>
+<div class="arithmatex">\[\phi(x) = \text{elu}(x) + 1$$
+$$\text{Attn}(q, k, v) = \frac{\phi(q) \cdot (\phi(k)^\top \cdot v)}{\phi(q) \cdot \phi(k)^\top \cdot \mathbf{1}}\]</div>
+<p>关键：<span class="arithmatex">\(\phi(k)^\top \cdot v\)</span> 是一个 <span class="arithmatex">\(d \times d\)</span> 的矩阵（和 <span class="arithmatex">\(n\)</span> 无关），可以<strong>递推更新</strong>：
+每来一个新 token，只需 <span class="arithmatex">\(O(d^2)\)</span> 更新，不需要重新算整个 attention matrix。</p>
+<h3 id="43-7525">4.3 为什么 75/25<a class="headerlink" href="#43-7525" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Linear attention 用核技巧 <span class="arithmatex">\(\phi(q) \cdot \phi(k)^\top\)</span> 近似 softmax，省显存 + 长上下文快</li>
-<li>Full attention 保留在关键层，确保信息聚合质量</li>
+<li><strong>75% linear</strong>：大部分层用 linear，省显存 + 长上下文快</li>
+<li><strong>25% full</strong>：保留关键层的 full attention，确保信息聚合质量</li>
+<li>这个配比是 Qwen3.6 的经验值——全 linear 会损失质量，全 full 会爆显存</li>
 </ul>
-<p>这不直接帮助"不崩"，但它在<strong>低 bit 约束下最大化有效上下文长度</strong>——
-同样是 Intelligence Density 的体现（每 GB 能处理多少 token）。</p>
-<h2 id="_5">三根支柱的乘法关系<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="44-intelligence-density">4.4 和 Intelligence Density 的关系<a class="headerlink" href="#44-intelligence-density" title="Permanent link">&para;</a></h3>
+<p>Hybrid attention 不直接提升"不崩"，但提升<strong>每 GB 能处理多少 token</strong>——
+这同样是 Intelligence Density 的一部分（密度不只是"能跑"，还要"能处理长上下文"）。</p>
+<hr />
+<h2 id="5">5. 三根支柱的乘法关系<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 公式<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[\text{保留能力} = \underbrace{\text{旋转}}_{\text{改变误差方向}} \times \underbrace{\text{QAT}}_{\text{权重适应}} \times \underbrace{\text{hybrid}}_{\text{上下文效率}}\]</div>
+<h3 id="52">5.2 缺任何一根都会塌<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>去掉哪个</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>去掉旋转</td>
+<td>误差沿敏感方向集中 → 塌陷（输出乱码）</td>
+</tr>
+<tr>
+<td>去掉 QAT</td>
+<td>权重没适应低 bit → 损失从 +0.32 跳到 +0.90</td>
+</tr>
+<tr>
+<td>去掉 hybrid</td>
+<td>长上下文显存爆炸 → 装不下（密度归 0）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三者缺一不可。</strong> Bonsai 的贡献不是发明其中任何一个，而是<strong>把它们端到端整合成一个无 escape hatch 的系统</strong>。</p>
+<h3 id="53-escape-hatch">5.3 为什么"无 escape hatch"很重要<a class="headerlink" href="#53-escape-hatch" title="Permanent link">&para;</a></h3>
+<p>Bonsai 的一个关键设计哲学是<strong>无 escape hatch</strong>：</p>
 <ul>
-<li>去掉旋转：误差沿敏感方向集中 → 塌陷</li>
-<li>去掉 QAT：权重没适应低 bit → 损失 +0.90</li>
-<li>去掉 hybrid：长上下文显存爆炸 → 装不下</li>
+<li>不允许"重要层保留高 bit"（混合精度）——所有层都是三值/二值</li>
+<li>不允许"难量化的权重跳过旋转"——全部旋转</li>
+<li>不允许"推理时解压回 FP16"——权重以打包格式直接被 kernel 消费</li>
 </ul>
-<p>三者缺一不可。Bonsai 的贡献不是发明其中任何一个，而是<strong>把它们端到端整合成一个无 escape hatch 的系统</strong>。</p>
-<h2 id="_6">实验验证<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>这种"无退路"的设计<strong>倒逼系统在每个环节都做到极致</strong>。
+如果有 escape hatch，工程上会倾向于"难的地方就跳过"，最终模型变成"半量化半 FP16"的缝合怪，
+既不省空间也不保精度。</p>
+<div class="admonition insight">
+<p class="admonition-title">约束催生创新</p>
+<p>"无 escape hatch"不是限制，而是<strong>设计约束</strong>。
+正是因为"必须全部三值化"的硬约束，才倒逼出"旋转 + QAT + group scale"的系统配合。
+如果允许混合精度，这个系统配合可能永远不会被发明。</p>
+<p>这是"约束催生创新"的经典案例——和 C 语言的手动内存管理催生 Rust 的所有权系统同理。</p>
+</div>
+<hr />
+<h2 id="6">6. 实验验证<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th>实验</th>
 <th>展现</th>
+<th>关键数据</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>01_hadamard_magic</code></td>
 <td>旋转增大权重误差但减小下游误差</td>
+<td>0.86→1.22（权重），0.86→0.52（下游）</td>
 </tr>
 <tr>
 <td><code>02_ternary_vs_binary</code></td>
 <td>端到端 MiniBonsai 前向对比</td>
+<td>ternary 优于 binary</td>
 </tr>
 <tr>
 <td><code>04_qat_the_real_gain</code></td>
-<td>QAT vs PTQ：+0.32 vs +0.90</td>
+<td>QAT vs PTQ</td>
+<td>+0.32 vs +0.90</td>
 </tr>
 </tbody>
 </table>
+<p><strong>实验 01</strong> 是最反直觉的——亲眼看到"权重误差变大但下游误差变小"，
+理解"旋转改变误差方向"而不是"旋转减小误差"。</p>
+<p><strong>实验 04</strong> 是最关键的——亲眼看到 QAT 的损失只有 PTQ 的 1/3，
+理解"训练时三值化"和"训练后三值化"的根本差异。</p>
+<hr />
+<h2 id="7">7. 总结：不崩的完整图景<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>传统量化塌陷的原因：
+  权重各向异性 → 三值化误差集中在敏感方向 → 下游投影大 → reasoning chain 断裂
+
+Bonsai 不崩的机制：
+  Hadamard 旋转    → 误差均匀分布到所有方向（不减小总误差，但减小投影）
+  × QAT            → 权重主动适应 {−1,0,+1}（在旋转后的好基上学会表达信息）
+  × hybrid attention → 长上下文不爆显存（O(n) 而非 O(n²)）
+  = 1.7 bit 保留 98% 能力
+</code></pre></div>
+<p><strong>核心洞察</strong>：不崩不是因为"量化做得更好"，而是<strong>换了一套方法</strong>——
+从"训练完再压"（PTQ）转向"旋转 + 在压缩约束下训练"（旋转 + QAT），
+并用 hybrid attention 保住长上下文。</p>
+<hr />
+<h2 id="_3">进一步阅读<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../operators/hadamard/">Hadamard 旋转</a> — 旋转的数学原理和实现</li>
+<li><a href="../../operators/ternary/">三值化与二值化</a> — QAT 和 STE 的实现</li>
+<li><a href="../intelligence-density/">Intelligence Density</a> — 为什么"不崩"还不够，还要"密度高"</li>
+<li><a href="../innovation-lineage/">算法创新谱系</a> — 这三根支柱各自从哪来</li>
+</ul>
 
 
 
