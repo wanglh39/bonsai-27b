@@ -1,7 +1,8 @@
 site_name: Bonsai-27B 教学复现
 site_description: 用 PyTorch 复现 Bonsai-27B 的核心算子与设计哲学
-repo_url: https://github.com/example/bonsai-27b
-repo_name: bonsai-27b
+repo_url: https://github.com/wanglh39/bonsai-27b
+repo_name: wanglh39/bonsai-27b
+site_url: https://wanglh39.github.io/bonsai-27b/
 
 theme:
   name: material
